@@ -1,70 +1,171 @@
-# Getting Started with Create React App
+# Ayokunnumi's Portfolio <a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- <div align="center">
+  <img src="./app/assets/images/budget-app.gif" alt="wise spender"/>
+  <br/>
+  <br/>
+  <br/>
+</div> -->
 
-## Available Scripts
+<!-- TABLE OF CONTENTS -->
 
-In the project directory, you can run:
+# 📗 Table of Contents
 
-### `npm start`
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+- [💻 Getting Started](#getting-started)
+  - [Setup](#setup)
+  - [Prerequisites](#prerequisites)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Run tests](#run-tests)
+  
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<!-- INTRO -->
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# Ayokunnumi's Portfolio <a name="about-project"></a>
 
-### `npm test`
+> A collection of real-world projects, skills, resume, and experiences
+## 🛠 Built With <a name="built-with"></a>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. REACT
+2. JAVASCRIPT
+3. TAILWIND CSS
 
-### `npm run build`
+### Tech Stack <a name="tech-stack"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+  <summary>Client</summary>
+  <ul>
+    <li><a href="https://react.org/">REACT</a></li>
+    <li><a href="https://javascript.org/">JAVASCRIPT</a></li>
+    <li><a href="https://tailwind.org/">TAILWIND</a></li>
+  </ul>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<!-- Features -->
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Key Features <a name="key-features"></a>
 
-### `npm run eject`
+> - Home
+> - About Me.
+> - Skills
+> - Portfolio
+> - Blog
+> - Contact
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 💻 Getting Started <a name="getting-started"></a>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+> To get a local copy of the project, use this link:
 
-## Learn More
+```sh
+cd ayokunnumi-portfolio
+git@github.com:Ayokunnumi1/ayokunnumi-portfolio.git
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<!-- SETUP -->
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Setup
 
-### Code Splitting
+To setup this project, run this command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+npm create-react-app
+```
 
-### Analyzing the Bundle Size
+### Prerequisites
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. A Browser (Preferably Google Chrome)
+2. A Code Editor
+3. Internet Connection
+4. Git
 
-### Making a Progressive Web App
+<!-- INSTALL -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### Install
 
-### Advanced Configuration
+Install this project with node modules and npm.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### Usage
 
-### Deployment
+To run the project, execute the following command:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+```sh
+npm start
+```
 
-### `npm run build` fails to minify
+### Run tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+To test the project, execute the following command:
+
+```sh
+Jest
+```
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+<!-- - [Live Demo Link](https://wise-spender.onrender.com/) -->
+
+<!-- ## 🚀 Video Demo <a name="live-demo"></a>
+
+- [Live Video Link](https://www.loom.com/share/5a9b67e129bd450ca2567c28b58d82cc?sid=738a80de-8cd1-4c0b-8fd9-a28b3251b886) -->
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Ayokunnumi Omololu**
+
+- GitHub: [@Ayokunnumi1](https://github.com/Ayokunnumi1)
+- Twitter: [@Ayokunnumi](https://twitter.com/AyokunnumiA)
+- LinkedIn: [@Ayokunnumi](https://www.linkedin.com/in/ayokunnumiomololu)
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **Admin**
+- [ ] **Newsletter Section**
+<!-- - [ ] **Repost posts** -->
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTION -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!--SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+> If you like this project, please give it some starts ⭐️⭐️⭐️⭐️⭐️
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](/LICENSE) licensed.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
