@@ -1,0 +1,12 @@
+.bg-overlayy::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #2A3132;
+    /* custom-gray */
+    opacity: 0.7;
+    /* 100% - 30% = 70% opacity */
+}
