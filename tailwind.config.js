@@ -7,7 +7,7 @@ module.exports = {
         "custom-gray": "#2A3132",
       },
       backgroundImage: (theme) => ({
-        "home-pg-bg-image": "url('../src/asset/tech-bg.jpg')",
+        "home-pg-bg-image": "url('./assets/tech-bg.jpg')",
       }),
     },
   },
