@@ -10,13 +10,13 @@ import "../styles/home.css";
 const Home = () => {
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen bg-overlayy text-white pt-5">
-      <div className="relative z-10 flex flex-row justify-between items-center px-10">
-        <h3 className="logo_font">
+      <div className="relative z-10 flex flex-row justify-between items-center px-10 lg:px-20">
+        <h3 className="logo_font logo_font_desktop">
           <span className="text-[#76E1A2]">AY</span>
           <span className="text-white">CODE</span>
         </h3>
         <nav>
-          <ul className="hidden lg:flex">
+          <ul className="hidden lg:flex flex-row justify-center items-center gap-8 nav_list">
             <li>Home</li>
             <li>About</li>
             <li>Portfolio</li>
