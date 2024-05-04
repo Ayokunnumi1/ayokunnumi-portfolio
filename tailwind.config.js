@@ -9,6 +9,18 @@ module.exports = {
       backgroundImage: (theme) => ({
         "home-pg-bg-image": "url('./assets/tech-bg.jpg')",
       }),
+      height: {
+        506: "506px",
+      },
+      width: {
+        263: "263px",
+      },
+      objectFit: {
+        cover: "cover",
+      },
+      rotate: {
+        "-45": "-45deg",
+      },
     },
   },
   plugins: [],
