@@ -1,11 +1,16 @@
 import Menu from "../assets/images/menu.png";
 import myPic from "../assets/images/myPic.png";
+import linkedIn from "../assets/images/linked_in_circled.png";
+import twitter from "../assets/images/twitter_circled.png";
+import medium from "../assets/images/medium.png";
+import youtube from "../assets/images/you_tube_logo.png";
+
 import "../styles/home.css";
 
 const Home = () => {
   return (
-    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen bg-overlayy text-white pt-5 px-10">
-      <div className="relative z-10 flex flex-row justify-between items-center">
+    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen bg-overlayy text-white pt-5">
+      <div className="relative z-10 flex flex-row justify-between items-center px-10">
         <h3 className="logo_font">
           <span className="text-[#76E1A2]">AY</span>
           <span className="text-white">CODE</span>
@@ -25,7 +30,7 @@ const Home = () => {
         </nav>
       </div>
 
-      <div className="relative z-10  rounded-t-[150px] rounded-b-[100px] bg-[#272A2B] flex flex-col items-center w-80 h-506 mt-10">
+      <div className="relative z-10  rounded-t-[150px] rounded-b-[100px] bg-[#272A2B] flex flex-col items-center w-80 h-506 mt-10 mx-auto">
         <div className="w-80 h-80 bg-[#374B3F] rounded-full flex flex-col items-center justify-center">
           <div className="w-64 h-64 rounded-full bg-[#6AB187] flex flex-col items-center justify-center">
             <img
@@ -40,6 +45,20 @@ const Home = () => {
           <span className="text-white">Full Stack </span>
           <span className="text-[#76E1A2]">Web Developer</span>
         </h3>
+        <div className="flex flex-row justify-center items-center gap-2 mt-5">
+          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
+            <img className="" src={linkedIn} alt="my face" />
+          </div>
+          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
+            <img className="" src={twitter} alt="my face" />
+          </div>
+          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
+            <img className="" src={medium} alt="my face" />
+          </div>
+          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
+            <img className="" src={youtube} alt="my face" />
+          </div>
+        </div>
       </div>
     </section>
   );
