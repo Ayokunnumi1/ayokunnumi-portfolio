@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 .bg-overlayy::before {
     content: "";
@@ -7,7 +7,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: #1F2122;
+    background: #101011;
     opacity: 0.8;
 }
 
@@ -25,14 +25,25 @@
     transform: rotate(-17deg) translateX(10px);
 }
 
-.my_name{
+.my_name {
     font-family: "Lato";
     font-size: 32px;
     font-weight: 400;
-    color: #FFFFFF;
+    color: #ffffff;
 }
 
 .full_stack_text {
     font-family: "Roboto Slab";
     font-size: 17px;
+}
+
+@media screen and (min-width: 1280px) {
+    .logo_font_desktop {
+        font-size: 30px;
+    }
+
+    .nav_list {
+        font-family: "Roboto Flex";
+        font-size: 20px;
+    }
 }
