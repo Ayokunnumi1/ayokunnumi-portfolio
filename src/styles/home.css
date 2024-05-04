@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 .bg-overlayy::before {
     content: "";
     position: absolute;
@@ -5,8 +7,32 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: #2A3132;
-    /* custom-gray */
+    background: #1F2122;
     opacity: 0.7;
-    /* 100% - 30% = 70% opacity */
+}
+
+.custom_border {
+    border: 3px solid red;
+}
+
+.logo_font {
+    font-family: "Luckiest Guy";
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.rotate_img {
+    transform: rotate(-17deg) translateX(10px);
+}
+
+.my_name{
+    font-family: "Lato";
+    font-size: 32px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.full_stack_text {
+    font-family: "Roboto Slab";
+    font-size: 17px;
 }
