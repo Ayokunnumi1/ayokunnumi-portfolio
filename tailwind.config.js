@@ -9,6 +9,9 @@ module.exports = {
       backgroundImage: (theme) => ({
         "home-pg-bg-image": "url('./assets/tech-bg.jpg')",
       }),
+      borderColor: {
+        "custom-green": "#6AB187",
+      },
       height: {
         506: "506px",
       },
