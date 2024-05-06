@@ -22,7 +22,7 @@ const Home = () => {
             <li>Portfolio</li>
             <li>Skills</li>
             <li>Contact</li>
-            <li>Resume</li>
+            <li className="lg:border-2 rounded px-0.5 border-custom-green">Resume</li>
           </ul>
         </nav>
         <nav className="block lg:hidden">
