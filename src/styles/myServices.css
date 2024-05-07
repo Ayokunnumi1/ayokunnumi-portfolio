@@ -1,0 +1,27 @@
+.myServices {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.whatIDo {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.borderRadius {
+    border-radius: 20px;
+}
+
+.myService_title {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.myService_title_text {
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
