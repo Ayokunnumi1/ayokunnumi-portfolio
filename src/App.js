@@ -12,7 +12,7 @@ import Contact from "./component/Contact";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App overlayy">
       <Home />
       <MyServices />
       <About />
