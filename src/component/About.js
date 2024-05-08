@@ -1,8 +1,19 @@
+import "../styles/about.css"
+
 const About = () => {
     return (
-        <section>
-            About Page
-        </section>
+      <section className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white p-10">
+        <div className="relative z-10 flex flex-col justify-center items-center gap-5">
+          <div className="flex flex-col items-center">
+            <h3 className="about_me_heading">About Me</h3>
+            <div className="w-20 h-1 bg-custom-green"></div>
+          </div>
+          <p className="about_me_text lg:px-36 p-6">
+            "I specialize in building user centric applications for companies
+            with a vision for the future."
+          </p>
+        </div>
+      </section>
     );
 }
 
