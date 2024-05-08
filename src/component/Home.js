@@ -9,7 +9,7 @@ import "../styles/home.css";
 
 const Home = () => {
   return (
-    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen bg-overlayy text-white pt-5">
+    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen md:min-h-0  md:pb-5 lg:min-h-screen text-white pt-5">
       <div className="relative z-10 flex flex-row justify-between items-center px-10 lg:px-20">
         <h3 className="logo_font logo_font_desktop">
           <span className="text-[#76E1A2]">AY</span>
@@ -22,7 +22,9 @@ const Home = () => {
             <li>Portfolio</li>
             <li>Skills</li>
             <li>Contact</li>
-            <li className="lg:border-2 rounded px-0.5 border-custom-green">Resume</li>
+            <li className="lg:border-2 rounded px-0.5 border-custom-green">
+              Resume
+            </li>
           </ul>
         </nav>
         <nav className="block lg:hidden">
@@ -32,7 +34,7 @@ const Home = () => {
 
       <div className="relative z-10  rounded-t-[150px] rounded-b-[100px] bg-[#272A2B] flex flex-col items-center w-80 h-506 mt-10 mx-auto">
         <div className="w-80 h-80 bg-[#374B3F] rounded-full flex flex-col items-center justify-center">
-          <div className="w-64 h-64 rounded-full bg-[#6AB187] flex flex-col items-center justify-center">
+          <div className="w-64 h-64 rounded-full bg-custom-green flex flex-col items-center justify-center">
             <img
               className=" w-80 h-80 object-cover rounded-full rotate_img"
               src={myPic}
