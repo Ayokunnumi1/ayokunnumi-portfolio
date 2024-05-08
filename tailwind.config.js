@@ -5,10 +5,15 @@ module.exports = {
     extend: {
       colors: {
         "custom-gray": "#2A3132",
+        "custom-green": "#6AB187",
+        "custom-black": "#272A2B"
       },
       backgroundImage: (theme) => ({
         "home-pg-bg-image": "url('./assets/tech-bg.jpg')",
       }),
+      rounded: {
+        51: "51px"
+      },
       borderColor: {
         "custom-green": "#6AB187",
       },
