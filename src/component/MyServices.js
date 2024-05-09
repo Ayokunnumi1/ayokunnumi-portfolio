@@ -6,7 +6,7 @@ import FullStackImg from "../assets/images/fullStack.png";
 const MyServices = () => {
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white pb-10">
-      <div className="relative z-10">
+      <div className="relative z-10 md:px-10 lg:px-20">
         <h3 className="myServices px-5 pt-5">
           <span>My </span>
           <span className="text-custom-green">Services</span>
