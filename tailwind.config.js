@@ -12,16 +12,18 @@ module.exports = {
         "home-pg-bg-image": "url('./assets/tech-bg.jpg')",
       }),
       rounded: {
-        51: "51px"
+        '51': "51px"
       },
       borderColor: {
         "custom-green": "#6AB187",
       },
       height: {
-        506: "506px",
+        '506': "506px",
+        '447': "447px"
       },
       width: {
-        263: "263px",
+        '263': "263px",
+        '1280': "1280px"
       },
       objectFit: {
         cover: "cover",
