@@ -1,31 +1,31 @@
-.logo_font {
+.logo-font {
     font-family: "Luckiest Guy", sans-serif;
     font-size: 24px;
     font-weight: 400;
 }
 
-.rotate_img {
+.rotate-img {
     transform: rotate(-17deg) translateX(10px);
 }
 
-.my_name {
+.my-name {
     font-family: "Lato", sans-serif;
     font-size: 32px;
     font-weight: 400;
     color: #ffffff;
 }
 
-.full_stack_text {
+.full-stack-text {
     font-family: "Roboto Slab", sans-serif;
     font-size: 17px;
 }
 
 @media screen and (min-width: 1280px) {
-    .logo_font_desktop {
+    .logo-font-desktop {
         font-size: 30px;
     }
 
-    .nav_list {
+    .nav-list {
         font-family: "Roboto Flex", sans-serif;
         font-size: 20px;
     }

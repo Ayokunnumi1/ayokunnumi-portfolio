@@ -11,12 +11,12 @@ const Home = () => {
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen md:min-h-0  md:pb-5 lg:min-h-screen text-white pt-5">
       <div className="relative z-10 flex flex-row justify-between items-center px-10 lg:px-20">
-        <h3 className="logo_font logo_font_desktop">
+        <h3 className="logo-font logo-font-desktop">
           <span className="text-[#76E1A2]">AY</span>
           <span className="text-white">CODE</span>
         </h3>
         <nav>
-          <ul className="hidden lg:flex flex-row justify-center items-center gap-8 nav_list">
+          <ul className="hidden lg:flex flex-row justify-center items-center gap-8 nav-list">
             <li>Home</li>
             <li>About</li>
             <li>Portfolio</li>
@@ -36,14 +36,14 @@ const Home = () => {
         <div className="w-80 h-80 bg-[#374B3F] rounded-full flex flex-col items-center justify-center">
           <div className="w-64 h-64 rounded-full bg-custom-green flex flex-col items-center justify-center">
             <img
-              className=" w-80 h-80 object-cover rounded-full rotate_img"
+              className=" w-80 h-80 object-cover rounded-full rotate-img"
               src={myPic}
               alt="my face"
             />
           </div>
         </div>
-        <h3 className="my_name">AYO OMOLOLU</h3>
-        <h3 className="full_stack_text">
+        <h3 className="my-name">AYO OMOLOLU</h3>
+        <h3 className="full-stack-text">
           <span className="text-white">Full Stack </span>
           <span className="text-[#76E1A2]">Web Developer</span>
         </h3>
