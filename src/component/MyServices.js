@@ -1,4 +1,4 @@
-import "../styles/myServices.css";
+import "../app.css";
 import FrontendImg from "../assets/images/frontend.png";
 import BackendImg from "../assets/images/backend.png";
 import FullStackImg from "../assets/images/fullStack.png";

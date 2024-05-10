@@ -4,8 +4,7 @@ import linkedIn from "../assets/images/linked_in_circled.png";
 import twitter from "../assets/images/twitter_circled.png";
 import medium from "../assets/images/medium.png";
 import youtube from "../assets/images/you_tube_logo.png";
-
-import "../styles/home.css";
+import "../app.css";
 
 const Home = () => {
   return (
