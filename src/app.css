@@ -78,19 +78,31 @@
   font-size: 35px;
   font-weight: 100;
   text-align: center;
-  color: rgb(203 213 225 / var(--tw-text-opacity));
+  color: rgba(236, 236, 236, 1);
+  /* color: rgb(203 213 225 / var(--tw-text-opacity)); */
 }
 
-.about-me-heading {
+.testimonial-text{
+  font-family: "Bad Script", sans-serif;
+  font-size: 20px;
+  color: rgba(236, 236, 236, 1);
+}
+
+.about-me-heading,
+.testimonials {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 25px;
   font-weight: 500;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .portfolio-text {
   font-family: "Roboto Condensed", sans-serif;
   font-size: 16px;
   font-weight: 400;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 @media screen and (min-width: 1280px) {
