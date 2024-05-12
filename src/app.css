@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bad+Script&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Luckiest+Guy&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 *,
 *::before,
@@ -50,14 +50,16 @@
 }
 
 .my-services,
-.my-work {
+.my-work,
+.my-skills {
   font-family: "Roboto Slab", sans-serif;
   font-size: 18px;
   font-weight: 400;
 }
 
 .what-i-do,
-.what-i-create {
+.what-i-create,
+.what-i-use {
   font-family: "Roboto Slab", sans-serif;
   font-size: 30px;
   font-weight: 600;
@@ -119,6 +121,75 @@
   font-size: 18px;
 }
 
+.circular-progress-common {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background: conic-gradient(#6AB187 3.6deg, #374B3F 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circular-progress-common::before {
+  content: "";
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  background: #1F2122;
+}
+
+.progress-value-common {
+  position: relative;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+}
+
+.progress-text {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 12px;
+}
+
+@media (min-width: 428px) {
+  .circular-progress-common {
+    height: 85px;
+    width: 85px;
+  }
+
+  .circular-progress-common::before {
+    height: 65px;
+    width: 65px;
+  }
+
+  .progress-text {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .circular-progress-common {
+    height: 150px;
+    width: 150px;
+  }
+
+  .circular-progress-common::before {
+    height: 120px;
+    width: 120px;
+  }
+
+  .progress-text {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 20px;
+  }
+
+  .progress-value-common {
+    font-size: 25px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   .logo-font-desktop {
     font-size: 30px;
@@ -140,4 +211,20 @@
   .testimonials {
     font-size: 30px;
   }
+
+  .circular-progress-common {
+    height: 180px;
+    width: 180px;
+  }
+
+  .circular-progress-common::before {
+    height: 150px;
+    width: 150px;
+  }
+
+  .progress-text {
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 25px;
+  }
+
 }
