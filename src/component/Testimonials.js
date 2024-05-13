@@ -3,7 +3,7 @@ import Testimonial from "../assets/images/testimonial.png";
 const Testimonials = () => {
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white w-full md:h-96 bg-center bg-[100% auto] p-8">
-      <div className="relative z-10 flex flex-col justify-center items-center gap-4 md:gap-8 md:px-10 lg:px-20">
+      <div className="relative z-10 flex flex-col justify-center items-center gap-4 md:px-10 lg:px-20">
         <div className="flex flex-col items-center">
           <h3 className="testimonials">Testimonials</h3>
           <span className="w-20 h-1 bg-custom-green"></span>
