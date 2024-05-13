@@ -26,45 +26,45 @@ const Portfolio = () => {
             <span>Ruby</span>
           </div>
         </div>
-        <section className="flex flex-col md:flex-row md:flex-wrap justify-center items-center gap-4 lg:gap-8">
+        <section className="flex flex-col sd:flex-row sd:flex-wrap md:flex-row md:flex-wrap lg:flex-wrap justify-center items-center gap-4 lg:gap-8">
           <div>
             <img
-              className=" w-80 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
+              className=" w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={Mentor}
               alt="mentor application"
             />
           </div>
           <div>
             <img
-              className="w-80 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
+              className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={WiseSpender}
               alt="wise spender"
             />
           </div>
           <div>
             <img
-              className="w-80 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
+              className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={Reelflix}
               alt="reelflix movie"
             />
           </div>
           <div className="">
             <img
-              className="w-80 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
+              className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={Conference}
               alt="conference"
             />
           </div>
           <div className="">
             <img
-              className="w-80 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
+              className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={Leaderboard}
               alt="leaderboard"
             />
           </div>
           <div className="">
             <img
-              className="w-80 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
+              className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={RPS}
               alt="rock paper scissors"
             />
