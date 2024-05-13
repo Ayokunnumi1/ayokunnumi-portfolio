@@ -1,7 +1,7 @@
 import "../app.css";
-import FrontendImg from "../assets/images/frontend.png";
-import BackendImg from "../assets/images/backend.png";
-import FullStackImg from "../assets/images/fullStack.png";
+import FrontendImg from "../assets/images/frontend.svg";
+import BackendImg from "../assets/images/backend.svg";
+import FullStackImg from "../assets/images/fullStack.svg";
 
 const MyServices = () => {
   return (
