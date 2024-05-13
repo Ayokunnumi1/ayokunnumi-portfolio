@@ -18,7 +18,7 @@ const Portfolio = () => {
         <div className="m-10 flex flex-col gap-4 md:flex-row justify-center items-center portfolio-text">
           <div className="flex flex-row gap-4 md:gap-10">
             <span>All</span>
-            <span>UI/UX</span>
+            <span>Html/Css</span>
           </div>
           <div className="flex flex-row gap-10 md:gap-10">
             <span>JavaScript</span>
