@@ -121,6 +121,12 @@
   font-size: 18px;
 }
 
+.project-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 .circular-progress-common {
   position: relative;
   height: 100px;
@@ -148,25 +154,37 @@
 }
 
 .progress-text {
-  font-family: "Roboto Mono", sans-serif;
-  font-size: 12px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 18px;
 }
 
-@media (min-width: 428px) {
-  .circular-progress-common {
-    height: 85px;
-    width: 85px;
+.qualification {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: large;
+  font-size: 18px;
+}
+
+.qualification-date {
+  font-family: "Roboto Condensed", sans-serif;
+  font-style: italic;
+  font-size: 17px;
+}
+
+.qualification-sch {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 20px;
+  font-size: medium;
+
+}
+
+@media screen and (min-width:520px) {
+  .project-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
   }
 
-  .circular-progress-common::before {
-    height: 65px;
-    width: 65px;
-  }
-
-  .progress-text {
-    font-family: "Roboto Mono", sans-serif;
-    font-size: 15px;
-  }
 }
 
 @media screen and (min-width: 720px) {
@@ -224,6 +242,21 @@
 
   .progress-text {
     font-family: "Roboto Mono", sans-serif;
+    font-size: 25px;
+  }
+
+  .project-container {
+    gap: 32px;
+  }
+
+  .qualification,
+  .qualification-date {
+    font-family: "Roboto Slab", sans-serif;
+    font-size: 20px;
+  }
+
+  .qualification-sch {
+    font-family: "Roboto Slab", sans-serif;
     font-size: 25px;
   }
 
