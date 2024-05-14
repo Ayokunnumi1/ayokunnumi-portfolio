@@ -26,7 +26,7 @@ const InterestingFacts = () => {
                   (<span>2024 - </span>
                   <span>present</span>)
                 </p>
-                <p className="qualification-sch">Self-employed</p>
+                <p className="qualification-sch">Hire Me</p>
               </div>
             </div>
             <div className="flex gap-4">
