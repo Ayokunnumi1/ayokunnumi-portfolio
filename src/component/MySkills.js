@@ -80,7 +80,7 @@ const MySkills = () => {
           <span className="text-custom-green">Skills</span>
         </h3>
         <h3 className="what-i-use mx-5 mt-0">What I Use</h3>
-        <div className="flex flex-row flex-wrap justify-center items-center gap-6 lg:gap-20 mt-8 text-center pb-10">
+        <div className="flex flex-row flex-wrap justify-center items-center gap-6 lg:gap-24 mt-8 text-center pb-10">
           <div>
             <div className="circular-progress-common circular-progress">
               <span className="progress-value-common progress-value">0%</span>
