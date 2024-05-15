@@ -230,21 +230,6 @@
     font-size: 30px;
   }
 
-  /* .circular-progress-common {
-    height: 180px;
-    width: 180px;
-  }
-
-  .circular-progress-common::before {
-    height: 150px;
-    width: 150px;
-  }
-
-  .progress-text {
-    font-family: "Roboto Mono", sans-serif;
-    font-size: 25px;
-  } */
-
   .project-container {
     gap: 32px;
   }
