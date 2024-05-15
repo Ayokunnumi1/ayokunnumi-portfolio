@@ -55,14 +55,14 @@ const Portfolio = () => {
               alt="conference"
             />
           </div>
-          <div className="">
+          <div>
             <img
               className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={Leaderboard}
               alt="leaderboard"
             />
           </div>
-          <div className="">
+          <div>
             <img
               className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={RPS}
