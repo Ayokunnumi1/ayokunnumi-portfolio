@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       screens: {
         sd: "485px",
+        xlg: "1300px"
+      },
+      spacing: {
+        "gap-1": "28rem"
       },
       colors: {
         "custom-gray": "#2A3132",
