@@ -10,12 +10,12 @@ const InterestingFacts = () => {
           <div className="w-20 h-1 bg-custom-green"></div>
         </div>
 
-        <article className="text-white flex flex-col sd:flex-row sd:justify-center sd:items-center gap-4 sd:gap-16 md:gap-48 lg:gap-80 xlg:gap-gap-1 sd:mt-8">
+        <article className="text-white flex flex-col sd:flex-row sd:justify-center sd:items-center gap-4 sd:gap-16 md:gap-48 lg:gap-80 xlg:gap-gap-1 sd:mt-8 custom-font-interesting-facts">
           <div className="flex flex-col gap-6 sd:gap-10">
             <div className="flex gap-4">
-              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green flex flex-col justify-center items-center">
+              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green">
                 <img
-                  className="w-12 h-12 lg:w-16 lg:h-16"
+                  className="w-12 h-12 lg:w-16 lg:h-16 m-auto"
                   src={BriefCase}
                   alt="portfolio"
                 />
@@ -30,9 +30,9 @@ const InterestingFacts = () => {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green flex flex-col justify-center items-center">
+              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green">
                 <img
-                  className="w-12 h-12 lg:w-16 lg:h-16"
+                  className="w-12 h-12 lg:w-16 lg:h-16 m-auto"
                   src={BriefCase}
                   alt="portfolio"
                 />
@@ -50,9 +50,9 @@ const InterestingFacts = () => {
           <span className="hidden sd:block sd:absolute sd:h-40 md:h-48 lg:h-56 w-0.5 border-r-2 border-custom-green"></span>
           <div className="flex flex-col gap-6 sd:gap-10">
             <div className="flex gap-4">
-              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green flex flex-col justify-center items-center">
+              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green">
                 <img
-                  className="w-12 h-12 lg:w-16 lg:h-16"
+                  className="w-12 h-12 lg:w-16 lg:h-16 m-auto"
                   src={GraduationCap}
                   alt="graduation"
                 />
@@ -67,9 +67,9 @@ const InterestingFacts = () => {
               </div>
             </div>
             <div className="flex gap-4">
-              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green flex flex-col justify-center items-center">
+              <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green">
                 <img
-                  className="w-12 h-12 lg:h-16 lg:w-16"
+                  className="w-12 h-12 lg:h-16 lg:w-16 m-auto"
                   src={GraduationCap}
                   alt="graduation"
                 />
@@ -80,7 +80,7 @@ const InterestingFacts = () => {
                   (<span>2010 - </span>
                   <span>2014</span>)
                 </p>
-                <p className="qualification-sch">University Of Lagos</p>
+                <p className="qualification-sch">Unilag</p>
               </div>
             </div>
           </div>
