@@ -5,13 +5,14 @@ import transitionContent from "../assets/images/transitionContent.jpg";
 const MyContent = () => {
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full">
-      <div className="relative z-10 md:px-10 lg:px-20 text-white">
+      <div className="relative z-10 lg:px-20 text-white">
         <h3 className="my-skills px-5 pt-5">
           <span>My </span>
           <span className="text-custom-green">Content</span>
         </h3>
         <h3 className="what-i-use mx-5 mt-0">What I Share</h3>
-        <article className="flex flex-col gap-10 md:flex-row mx-10 mt-8">
+
+        <article className="flex flex-col gap-10 md:gap-3 md:flex-row mx-10 mt-8">
           <div className="rounded-3xl border-2 border-custom-green ">
             <img
               className="bg-cover bg-no-repeat w-full rounded-3xl h-56"
