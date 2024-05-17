@@ -8,7 +8,7 @@
   padding: 0;
 }
 
-.custom_border {
+.custom-border {
   border: 3px solid red;
 }
 
@@ -160,22 +160,57 @@
   font-size: 18px;
 }
 
-.qualification {
+.custom-font-interesting-facts {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: large;
-  font-size: 18px;
+}
+
+.qualification {
+  font-size: 30px;
 }
 
 .qualification-date {
-  font-family: "Roboto Condensed", sans-serif;
   font-style: italic;
-  font-size: 17px;
+  font-size: 25px;
 }
 
 .qualification-sch {
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 22px;
+}
+
+.client-form {
+  font-family: "Roboto Mono", sans-serif;
   font-size: 20px;
-  font-size: medium;
+}
+
+#client-name,
+#client-email{
+  outline: none;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #6AB187;
+}
+
+#client-text {
+  outline: none;
+  border: 1px solid #6AB187;
+  border-radius: 10px;
+  background-color: #101011;
+}
+
+
+@media screen and (min-width:485px) {
+  .qualification {
+    font-size: 18px;
+  }
+  
+  .qualification-date {
+    font-style: italic;
+    font-size: 17px;
+  }
+  
+  .qualification-sch {
+    font-size: 20px;
+  }
 
 }
 
