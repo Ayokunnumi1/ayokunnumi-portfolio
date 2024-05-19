@@ -4,7 +4,7 @@ import Phone from "../assets/images/phone.svg";
 
 const Contact = () => {
   return (
-    <section className="">
+    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full">
       <div className="relative z-10 flex flex-col justify-center items-center gap-8 text-white">
         <div className="flex flex-col items-center">
           <h3 className="about-me-heading">Get In Touch</h3>
