@@ -5,41 +5,42 @@ import Phone from "../assets/images/phone.svg";
 const Contact = () => {
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full">
-      <div className="relative z-10 flex flex-col justify-center items-center gap-8 text-white">
+      <div className="relative z-10 flex flex-col justify-center items-center gap-8 text-white py-10">
         <div className="flex flex-col items-center">
           <h3 className="about-me-heading">Get In Touch</h3>
           <div className="w-20 h-1 bg-custom-green"></div>
         </div>
 
-        <form className="flex flex-col gap-4 client-form">
-          <label htmlFor="client-name">
-            Name
-            <br />
-            <input
-              type="text"
-              id="client-name"
-              name="client-name"
-              className="input-client-name"
-            ></input>
-          </label>
-
-          <label htmlFor="client-email">
-            Email
-            <br />
-            <input
-              type="email"
-              id="client-email"
-              name="client-email"
-              className=""
-            ></input>
-          </label>
+        <form className="flex flex-col gap-4 client-form md:flex-row md:justify-center md:items-center md:gap-10">
+          <div className="flex flex-col">
+            <label htmlFor="client-name">
+              Name
+              <br />
+              <input
+                type="text"
+                id="client-name"
+                name="client-name"
+                className="input-client-name"
+              ></input>
+            </label>
+            <label htmlFor="client-email md:mt-8">
+              Email
+              <br />
+              <input
+                type="email"
+                id="client-email"
+                name="client-email"
+                className=""
+              ></input>
+            </label>
+          </div>
 
           <div className="flex flex-col">
             <label for="client-text" className="md:hidden">
               Text
             </label>
             <textarea
-              className="mt-3 p-3"
+              className="mt-3 p-3 md:mt-0 md:p-0"
               id="client-text"
               type="text"
             ></textarea>
