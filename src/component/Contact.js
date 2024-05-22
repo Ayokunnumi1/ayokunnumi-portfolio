@@ -11,7 +11,7 @@ const Contact = () => {
           <div className="w-20 h-1 bg-custom-green"></div>
         </div>
 
-        <form className="client-form md:flex-row md:justify-center md:items-center md:gap-10 px-20">
+        <form className="md:flex md:flex-row md:gap-10 md:justify-center md:items-center client-form px-20">
           <div className="flex flex-col gap-4">
             <label htmlFor="client-name">
               Name
@@ -19,7 +19,7 @@ const Contact = () => {
                 type="text"
                 id="client-name"
                 name="client-name"
-                className="input-client-name"
+                className="input-client-name mx-6"
               ></input>
             </label>
             <label htmlFor="client-email md:mt-8">
@@ -28,17 +28,17 @@ const Contact = () => {
                 type="email"
                 id="client-email"
                 name="client-email"
-                className=""
+                className="input-client-name mx-6"
               ></input>
             </label>
           </div>
 
-          <div className="flex flex-col mt-6">
+          <div className="flex flex-col mt-5 md:mt-20">
             <label for="client-text" className="md:hidden">
               Text
             </label>
             <textarea
-              className="mt-3 p-3 md:mt-0 md:p-0"
+              className="mt-3 p-3 md:p-4"
               id="client-text"
               type="text"
             ></textarea>
