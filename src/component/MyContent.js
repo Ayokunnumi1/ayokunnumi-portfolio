@@ -5,7 +5,7 @@ import transitionContent from "../assets/images/transitionContent.jpg";
 const MyContent = () => {
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full">
-      <div className="relative z-10 lg:px-20 text-white">
+      <div className="relative z-10 lg:px-20 text-white pb-8">
         <h3 className="my-skills px-5 pt-5">
           <span>My </span>
           <span className="text-custom-green">Content</span>
