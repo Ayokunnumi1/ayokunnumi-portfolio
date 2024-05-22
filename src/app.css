@@ -183,7 +183,7 @@
 }
 
 #client-name,
-#client-email{
+#client-email {
   outline: none;
   border: none;
   background-color: transparent;
@@ -202,12 +202,12 @@
   .qualification {
     font-size: 18px;
   }
-  
+
   .qualification-date {
     font-style: italic;
     font-size: 17px;
   }
-  
+
   .qualification-sch {
     font-size: 20px;
   }
@@ -277,4 +277,9 @@
     font-size: 20px;
   }
 
+  #client-name,
+  #client-email {
+    font-size: 30px;
+  }
+  
 }
