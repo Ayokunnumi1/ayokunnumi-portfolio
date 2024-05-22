@@ -11,11 +11,10 @@ const Contact = () => {
           <div className="w-20 h-1 bg-custom-green"></div>
         </div>
 
-        <form className="flex flex-col gap-4 client-form md:flex-row md:justify-center md:items-center md:gap-10">
-          <div className="flex flex-col">
+        <form className="client-form md:flex-row md:justify-center md:items-center md:gap-10 px-20">
+          <div className="flex flex-col gap-4">
             <label htmlFor="client-name">
               Name
-              <br />
               <input
                 type="text"
                 id="client-name"
@@ -25,7 +24,6 @@ const Contact = () => {
             </label>
             <label htmlFor="client-email md:mt-8">
               Email
-              <br />
               <input
                 type="email"
                 id="client-email"
@@ -35,7 +33,7 @@ const Contact = () => {
             </label>
           </div>
 
-          <div className="flex flex-col">
+          <div className="flex flex-col mt-6">
             <label for="client-text" className="md:hidden">
               Text
             </label>
