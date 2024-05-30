@@ -8,7 +8,10 @@ import "../app.css";
 
 const Portfolio = () => {
   return (
-    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white w-full pb-10">
+    <section
+      id="portfolio"
+      className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white w-full pb-10"
+    >
       <div className="relative z-10 p-8 md:px-10 lg:px-20">
         <h3 className="my-work px-5 pt-5">
           <span>My </span>

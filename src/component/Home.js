@@ -1,3 +1,4 @@
+import { HashLink as Link } from "react-router-hash-link";
 import Menu from "../assets/images/menu.png";
 import myPic from "../assets/images/myPic.png";
 import linkedIn from "../assets/images/linked_in_circled.png";
@@ -8,7 +9,10 @@ import "../app.css";
 
 const Home = () => {
   return (
-    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen md:min-h-0  md:pb-5 lg:min-h-screen text-white pt-5">
+    <section
+      id="home"
+      className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen md:min-h-0  md:pb-5 lg:min-h-screen text-white pt-5"
+    >
       <div className="relative z-10 flex flex-row justify-between items-center px-10 lg:px-20">
         <h3 className="logo-font logo-font-desktop">
           <span className="text-[#76E1A2]">AY</span>
@@ -16,11 +20,31 @@ const Home = () => {
         </h3>
         <nav>
           <ul className="hidden lg:flex flex-row justify-center items-center gap-8 nav-list">
-            <li>Home</li>
-            <li>About</li>
-            <li>Portfolio</li>
-            <li>Skills</li>
-            <li>Contact</li>
+            <li>
+              <Link to="#home" smooth>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link to="#about" smooth>
+                About
+              </Link>
+            </li>
+            <li>
+              <Link to="#portfolio" smooth>
+                Portfolio
+              </Link>
+            </li>
+            <li>
+              <Link to="#skills" smooth>
+                Skills
+              </Link>
+            </li>
+            <li>
+              <Link to="#contact" smooth>
+                Contact
+              </Link>
+            </li>
             <li className="lg:border-2 rounded px-0.5 border-custom-green">
               Resume
             </li>

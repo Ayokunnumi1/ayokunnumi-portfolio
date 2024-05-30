@@ -73,7 +73,7 @@ const MySkills = () => {
   }, []);
 
   return (
-    <section className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white w-full">
+    <section id="skills" className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white w-full">
       <div className="relative z-10 md:px-10 lg:px-20">
         <h3 className="my-skills px-5 pt-5">
           <span>My </span>
