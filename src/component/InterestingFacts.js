@@ -21,12 +21,12 @@ const InterestingFacts = () => {
                 />
               </div>
               <div>
-                <h4 className="qualification">30+ Projects Done</h4>
+                <h4 className="qualification">Hackathon Winner</h4>
                 <p className="text-custom-green qualification-date">
                   (<span>2024 - </span>
                   <span>present</span>)
                 </p>
-                <p className="qualification-sch">Hire Me</p>
+                <p className="qualification-sch">View Certificate</p>
               </div>
             </div>
             <div className="flex gap-4">
