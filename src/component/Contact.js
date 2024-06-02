@@ -1,10 +1,16 @@
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import Resume from "../assets/images/resume.svg";
 import Email from "../assets/images/email.svg";
 import Phone from "../assets/images/phone.svg";
 
 const Contact = () => {
+  const addToRef = useVisibilityObserver(0.2);
+
   return (
-    <section id="contact" className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full">
+    <section
+      id="contact"
+      className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full"
+    >
       <div className="relative z-10 flex flex-col justify-center items-center gap-8 text-white py-10">
         <div className="flex flex-col items-center">
           <h3 className="about-me-heading">Get In Touch</h3>
@@ -12,7 +18,7 @@ const Contact = () => {
         </div>
 
         <form className="md:flex md:flex-row md:gap-10 md:justify-center md:items-center client-form px-20">
-          <div className="flex flex-col gap-4">
+          <div ref={addToRef} className="container flex flex-col gap-4">
             <label htmlFor="client-name">
               Name
               <input
@@ -33,8 +39,8 @@ const Contact = () => {
             </label>
           </div>
 
-          <div className="flex flex-col mt-5 md:mt-20">
-            <label for="client-text" className="md:hidden">
+          <div ref={addToRef} className="container flex flex-col mt-5 md:mt-20">
+            <label htmlFor="client-text" className="md:hidden">
               Text
             </label>
             <textarea
