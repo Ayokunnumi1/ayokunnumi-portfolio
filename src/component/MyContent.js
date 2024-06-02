@@ -1,8 +1,10 @@
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import ReactContent from "../assets/images/reactContent.jpg";
 import RubyContent from "../assets/images/rubyContent.jpg";
 import transitionContent from "../assets/images/transitionContent.jpg";
 
 const MyContent = () => {
+  const addToRef = useVisibilityObserver(0.1);
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full">
       <div className="relative z-10 lg:px-20 text-white pb-8">
@@ -13,7 +15,10 @@ const MyContent = () => {
         <h3 className="what-i-use mx-5 mt-0">What I Share</h3>
 
         <article className="flex flex-col gap-10 md:gap-3 md:flex-row mx-10 mt-8">
-          <div className="rounded-3xl border-2 border-custom-green ">
+          <div
+            ref={addToRef}
+            className="container rounded-3xl border-2 border-custom-green "
+          >
             <img
               className="bg-cover bg-no-repeat w-full rounded-3xl h-56"
               src={ReactContent}
@@ -30,7 +35,10 @@ const MyContent = () => {
             </div>
           </div>
 
-          <div className="rounded-3xl border-2 border-custom-green">
+          <div
+            ref={addToRef}
+            className="container rounded-3xl border-2 border-custom-green"
+          >
             <img
               className="bg-cover bg-no-repeat w-full rounded-3xl h-56"
               src={RubyContent}
@@ -47,7 +55,10 @@ const MyContent = () => {
             </div>
           </div>
 
-          <div className="rounded-3xl border-2 border-custom-green">
+          <div
+            ref={addToRef}
+            className="container rounded-3xl border-2 border-custom-green"
+          >
             <img
               className="bg-cover bg-no-repeat w-full rounded-3xl h-56"
               src={transitionContent}

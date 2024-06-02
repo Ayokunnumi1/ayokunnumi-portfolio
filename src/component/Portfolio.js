@@ -1,3 +1,4 @@
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import Mentor from "../assets/images/mentor_me.jpg";
 import WiseSpender from "../assets/images/wise_spender.jpg";
 import Reelflix from "../assets/images/reelflix.jpg";
@@ -7,6 +8,8 @@ import RPS from "../assets/images/rps.jpg";
 import "../app.css";
 
 const Portfolio = () => {
+  const addToRef = useVisibilityObserver(0.2);
+
   return (
     <section
       id="portfolio"
@@ -29,7 +32,10 @@ const Portfolio = () => {
             <span>Ruby</span>
           </div>
         </div>
-        <section className="flex flex-col sd:flex-row sd:flex-wrap md:flex-row md:flex-wrap lg:flex-wrap justify-center items-center gap-4 lg:gap-8">
+        <section
+          ref={addToRef}
+          className="container flex flex-col sd:flex-row sd:flex-wrap md:flex-row md:flex-wrap lg:flex-wrap justify-center items-center gap-4 lg:gap-8"
+        >
           <div>
             <img
               className=" w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"

@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 
 const MySkills = () => {
-  const calculateProgress = (
+    const calculateProgress = (
     circularProgress,
     progressValue,
     progressEndValue,
@@ -68,12 +68,18 @@ const MySkills = () => {
     progressBars.forEach((bar) => {
       const circularProgress = document.querySelector(`.${bar.progressClass}`);
       const progressValue = document.querySelector(`.${bar.valueClass}`);
-      calculateProgress(circularProgress, progressValue, bar.endValue, 100);
+      // calculateProgress(circularProgress, progressValue, bar.endValue, 100);
+      if (circularProgress && progressValue) {
+        calculateProgress(circularProgress, progressValue, bar.endValue, 100);
+      }
     });
   }, []);
 
   return (
-    <section id="skills" className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white w-full">
+    <section
+      id="skills"
+      className="bg-home-pg-bg-image bg-no-repeat bg-cover text-white w-full"
+    >
       <div className="relative z-10 md:px-10 lg:px-20">
         <h3 className="my-skills px-5 pt-5">
           <span>My </span>
