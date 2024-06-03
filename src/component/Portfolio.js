@@ -8,7 +8,7 @@ import RPS from "../assets/images/rps.jpg";
 import "../app.css";
 
 const Portfolio = () => {
-  const addToRef = useVisibilityObserver(0.2);
+  const [addToRef] = useVisibilityObserver();
 
   return (
     <section

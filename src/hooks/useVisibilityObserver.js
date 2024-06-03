@@ -1,7 +1,6 @@
-// src/hooks/useVisibilityObserver.js
 import { useEffect, useRef } from "react";
 
-const useVisibilityObserver = (threshold = 0.2) => {
+const useVisibilityObserver = () => {
   const elementsRef = useRef([]);
 
   useEffect(() => {
@@ -10,28 +9,32 @@ const useVisibilityObserver = (threshold = 0.2) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
             entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
           }
         });
       },
       {
-        threshold, // Use the threshold passed to the hook
+        threshold: 0.2, // Adjust threshold as needed
       }
     );
 
-    elementsRef.current.forEach((element) => {
+    const currentElements = elementsRef.current;
+
+    currentElements.forEach((element) => {
       if (element) {
         observer.observe(element);
       }
     });
 
     return () => {
-      elementsRef.current.forEach((element) => {
+      currentElements.forEach((element) => {
         if (element) {
           observer.unobserve(element);
         }
       });
     };
-  }, [threshold]);
+  }, []);
 
   const addToRef = (el) => {
     if (el && !elementsRef.current.includes(el)) {
@@ -39,7 +42,7 @@ const useVisibilityObserver = (threshold = 0.2) => {
     }
   };
 
-  return addToRef;
+  return [addToRef];
 };
 
 export default useVisibilityObserver;

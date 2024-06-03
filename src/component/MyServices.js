@@ -5,7 +5,7 @@ import FullStackImg from "../assets/images/fullStack.svg";
 import "../app.css";
 
 const MyServices = () => {
-  const addToRef = useVisibilityObserver(0.2);
+  const [addToRef] = useVisibilityObserver();
 
 
   return (

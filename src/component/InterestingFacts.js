@@ -3,7 +3,7 @@ import GraduationCap from "../assets/images/graduation_cap.svg";
 import BriefCase from "../assets/images/briefcase.svg";
 
 const InterestingFacts = () => {
-  const addToRef = useVisibilityObserver(0.2);
+ const [addToRef] = useVisibilityObserver();
 
   return (
     <section className="bg-home-pg-bg-image bg-no-repeat bg-cover w-full sm:h-506 md:h-96 bg-center bg-[100% auto] py-6">
@@ -29,7 +29,7 @@ const InterestingFacts = () => {
               <div>
                 <h4 className="qualification">Hackathon Winner</h4>
                 <p className="text-custom-green qualification-date">
-                  (<span>2024 - </span>
+                  (<span>2024 -</span>
                   <span>present</span>)
                 </p>
                 <p className="qualification-sch">View Certificate</p>

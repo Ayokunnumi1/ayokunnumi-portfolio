@@ -11,8 +11,8 @@ import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import "../app.css";
 
 const Home = () => {
-  const addToRef = useVisibilityObserver(0.3);
-
+  const [addToRef] = useVisibilityObserver();
+  
     useEffect(() => {
     const menu = document.querySelector(".menu");
     const navLink = document.querySelector(".nav-link");
