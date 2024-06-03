@@ -282,6 +282,33 @@
   transform: translateY(0);
 }
 
+/* swiper-custom.css */
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.mySwiper .swiper-pagination {
+  padding-top: 10px;
+  position: relative;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: #76e1a2;
+  width: 12px;
+  height: 12px;
+
+}
+
+.name-error-msg,
+.email-error-msg,
+.text-error-msg {
+  color: red;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+}
+
 
 @media screen and (min-width:485px) {
   .qualification {
@@ -355,17 +382,17 @@
     transition: unset;
   }
 
-    .nav-link::before {
-      content: unset;
-      position: unset;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      background-color: unset;
-      opacity: 0.9;
-      z-index: -1;
-    }
+  .nav-link::before {
+    content: unset;
+    position: unset;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: unset;
+    opacity: 0.9;
+    z-index: -1;
+  }
 
   .show-link {
     height: unset;
@@ -398,6 +425,6 @@
   #client-email {
     font-size: 30px;
   }
-  
+
 
 }
