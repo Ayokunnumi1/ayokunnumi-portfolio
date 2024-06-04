@@ -74,7 +74,7 @@ const Home = () => {
       id="home"
       className="bg-home-pg-bg-image bg-no-repeat bg-cover min-h-screen md:min-h-0 md:pb-5 lg:min-h-screen text-white pt-5"
     >
-      <div className="fixed-navbar flex flex-row justify-between pt-4 items-center px-10 lg:px-20">
+      <div className="fixed-navbar flex flex-row justify-between pt-4 items-center px-12 lg:px-20">
         <h3 className="logo-font logo-font-desktop">
           <span className="text-[#76E1A2]">AY</span>
           <span className="text-white">CODE</span>
