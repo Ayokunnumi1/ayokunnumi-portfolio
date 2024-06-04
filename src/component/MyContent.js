@@ -21,7 +21,7 @@ const MyContent = () => {
             target="_blank"
             rel="noreferrer"
             ref={addToRef}
-            className="container rounded-3xl border-2 border-custom-green "
+            className="zoom-out container rounded-3xl border-2 border-custom-green "
           >
             <div>
               <img
@@ -41,7 +41,7 @@ const MyContent = () => {
             </div>
           </a>
           <a
-            className="container rounded-3xl border-2 border-custom-green"
+            className="zoom-out container rounded-3xl border-2 border-custom-green"
             ref={addToRef}
             href="https://youtu.be/ZngXkKPRmOw?si=tU2u-MjsgOsJt9rc"
             target="_blank"
@@ -67,16 +67,13 @@ const MyContent = () => {
           </a>
 
           <a
-            className="container rounded-3xl border-2 border-custom-green"
+            className="zoom-out container rounded-3xl border-2 border-custom-green"
             ref={addToRef}
             href="https://medium.com/@omololuayk/i-struggled-a-lot-with-having-a-career-change-d8715c509b16"
             target="_blank"
             rel="noreferrer"
           >
-            <div
-              ref={addToRef}
-              className="container rounded-3xl border-2 border-custom-green"
-            >
+            <div>
               <img
                 className="bg-cover bg-no-repeat w-full rounded-3xl h-56"
                 src={transitionContent}
