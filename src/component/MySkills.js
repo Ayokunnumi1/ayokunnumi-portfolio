@@ -1,6 +1,8 @@
 import { useEffect } from "react";
+import useVisibilityObserver from "../hooks/useVisibilityObserver";
 
 const MySkills = () => {
+  const [addToRef] = useVisibilityObserver();
     const calculateProgress = (
     circularProgress,
     progressValue,
@@ -86,7 +88,10 @@ const MySkills = () => {
           <span className="text-custom-green">Skills</span>
         </h3>
         <h3 className="what-i-use mx-5 mt-0">What I Use</h3>
-        <div className="flex flex-row flex-wrap justify-center items-center gap-6 lg:gap-24 xlg:gap-36 mt-8 text-center pb-10">
+        <div
+          ref={addToRef}
+          className="container flex flex-row flex-wrap justify-center items-center gap-6 lg:gap-24 xlg:gap-36 mt-8 text-center pb-10"
+        >
           <div>
             <div className="circular-progress-common circular-progress">
               <span className="progress-value-common progress-value">0%</span>
