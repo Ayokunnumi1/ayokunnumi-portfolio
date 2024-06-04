@@ -5,6 +5,9 @@ import Reelflix from "../assets/images/reelflix.jpg";
 import Conference from "../assets/images/conference.jpg";
 import Leaderboard from "../assets/images/leaderboard.jpg";
 import RPS from "../assets/images/rps.jpg";
+import visible from "../assets/images/visible.svg";
+import github from "../assets/images/github.svg";
+
 import "../app.css";
 
 const Portfolio = () => {
@@ -36,13 +39,23 @@ const Portfolio = () => {
           ref={addToRef}
           className="container flex flex-col sd:flex-row sd:flex-wrap md:flex-row md:flex-wrap lg:flex-wrap justify-center items-center gap-4 lg:gap-8"
         >
-          <div>
+          <div className="hover-effect relative group">
             <img
-              className=" w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
+              className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
               src={Mentor}
               alt="mentor application"
             />
+            <div className="absolute inset-0 flex justify-center items-center space-x-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+              <a href="https:" target="_blank" rel="noreferrer">
+                <img src={visible} alt="visible" />
+              </a>
+
+              <a href="https:" target="_blank" rel="noreferrer">
+                <img src={github} alt="github" />
+              </a>
+            </div>
           </div>
+
           <div>
             <img
               className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
