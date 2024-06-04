@@ -26,13 +26,13 @@ const InterestingFacts = () => {
                   alt="portfolio"
                 />
               </div>
-              <div>
-                <h4 className="qualification">Hackathon Winner</h4>
+              <div className="min-w-0 whitespace-nowrap">
+                <h3 className="qualification">Hackathon Winner</h3>
                 <p className="text-custom-green qualification-date">
                   (<span>2024 -</span>
                   <span>present</span>)
                 </p>
-                <p className="qualification-sch">View Certificate</p>
+                <p className="qualification-sch">Certificate</p>
               </div>
             </div>
             <div className="flex gap-4">
@@ -54,7 +54,10 @@ const InterestingFacts = () => {
             </div>
           </div>
           <span className="hidden sd:block sd:absolute sd:h-40 md:h-48 lg:h-56 w-0.5 border-r-2 border-custom-green"></span>
-          <div ref={addToRef} className="container flex flex-col gap-6 sd:gap-10">
+          <div
+            ref={addToRef}
+            className="container flex flex-col gap-6 sd:gap-10"
+          >
             <div className="flex gap-4">
               <div className="w-14 h-14 lg:w-20 lg:h-20 rounded-full border-2 border-custom-green">
                 <img
