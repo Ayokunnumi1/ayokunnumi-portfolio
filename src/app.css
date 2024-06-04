@@ -302,17 +302,42 @@
 
 .name-error-msg,
 .email-error-msg,
-.text-error-msg {
+.text-error-msg,
+.submit-error-msg {
   color: red;
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
   font-style: italic;
 }
 
+.zoom-out:hover {
+  transform: scale(0.8);
+}
+
+.hover-effect {
+  position: relative;
+  cursor: pointer;
+  }
+
+.hover-effect::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(211, 211, 211, 0);
+  transition: background 0.3s ease-in-out;
+  border-radius: 24px;
+  }
+
+.hover-effect:hover::before {
+  background: rgba(38, 26, 26, 0.5);
+}
 
 @media screen and (min-width:485px) {
   .qualification {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .qualification-date {
