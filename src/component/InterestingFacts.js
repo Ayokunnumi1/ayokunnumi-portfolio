@@ -44,12 +44,12 @@ const InterestingFacts = () => {
                 />
               </div>
               <div>
-                <h4 className="qualification">Tech Mentor</h4>
+                <h4 className="qualification">Front End Dev</h4>
                 <p className="text-custom-green qualification-date">
-                  (<span>2023 - </span>
-                  <span>2024</span>)
+                  (<span>2024 - </span>
+                  <span>present</span>)
                 </p>
-                <p className="qualification-sch">Microverse</p>
+                <p className="qualification-sch">Jasper's Hub</p>
               </div>
             </div>
           </div>
@@ -67,7 +67,7 @@ const InterestingFacts = () => {
                 />
               </div>
               <div>
-                <h4 className="qualification">Full Stack Dev</h4>
+                <h4 className="qualification">Tech Mentor</h4>
                 <p className="text-custom-green qualification-date">
                   (<span>2023 - </span>
                   <span>2024</span>)
@@ -84,12 +84,12 @@ const InterestingFacts = () => {
                 />
               </div>
               <div>
-                <h4 className="qualification">Bsc Zoology</h4>
+                <h4 className="qualification">Full Stack Dev</h4>
                 <p className="text-custom-green qualification-date">
-                  (<span>2010 - </span>
-                  <span>2014</span>)
+                  (<span>2023 - </span>
+                  <span>2024</span>)
                 </p>
-                <p className="qualification-sch">Unilag</p>
+                <p className="qualification-sch">Microverse</p>
               </div>
             </div>
           </div>
