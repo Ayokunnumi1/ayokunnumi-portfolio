@@ -1,4 +1,5 @@
 import React, { useState, useRef } from "react";
+import { NavLink } from "react-router-dom";
 import useVisibilityObserver from "../hooks/useVisibilityObserver.js";
 import Mentor from "../assets/images/mentor_me.jpg";
 import WiseSpender from "../assets/images/wise_spender.jpg";
@@ -13,101 +14,103 @@ import wiseSpenderVid from "../assets/videos/wise-spender-vid.mp4";
 import reelflixVid from "../assets/videos/reelflix-vid.mp4";
 import hnh from "../assets/videos/hnhvid.mp4";
 import ussd from "../assets/images/ussd.jpg";
-import leaderboardGif from "../assets/videos/Leaderboard gif.gif"
+import leaderBoard from "../assets/videos/leaderboard.mp4";
+import conference from "../assets/videos/conference-vid.mp4";
 
 import "../app.css";
-
-const projects = [
-  {
-    id: 1,
-    name: "Mentor Me Now",
-    image: Mentor,
-    description:
-      "Mentor Me Now is a web app designed to connect mentees with experienced mentors across various fields. Our app streamlines the process of finding and scheduling sessions with mentors, facilitating personal and professional growth.",
-    technologies: ["React", "Vite", "TailwindCSS", "Rails", "Postgresql"],
-    liveLink: "https://mentor-me-noww.vercel.app/",
-    sourceLink: "https://github.com/Ayokunnumi1/mentor_me_now_front_end_app",
-    video: mentorMeNowVid,
-    title: "Full Stack Dev",
-    date_of_creation: "2024",
-  },
-  {
-    id: 2,
-    name: "Wise Spender",
-    image: WiseSpender,
-    description:
-      "This is a mobile web app where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
-    technologies: ["Ruby On Rails", "VanillaCSS", "Ruby gems"],
-    liveLink: "https://wise-spender.onrender.com/",
-    sourceLink: "https://github.com/Ayokunnumi1/wise-spender",
-    video: wiseSpenderVid,
-    title: "Full Stack Dev",
-    date_of_creation: "2024",
-  },
-  {
-    id: 3,
-    name: "Haba na Haba Ussd APP",
-    image: ussd,
-    description:
-      "An app that connects surplus food providers with people that lacked food. This is our pitch for the hackathon. I was the team lead and only female, kindly turn on the volume",
-    technologies: [
-      "Rails",
-      "Africastalking API",
-      "Postgresql",
-      "VanillaCSS",
-      "Ngrok",
-    ],
-    liveLink: "#",
-    sourceLink: "https://github.com/Ayokunnumi1/zero-hunger-hackathon",
-    video: hnh,
-    title: "Full Stack Dev",
-    date_of_creation: "2024",
-  },
-  {
-    id: 4,
-    name: "Reelflix",
-    image: Reelflix,
-    description:
-      "A movie website that displays several Tv shows from an external API",
-    technologies: ["React", "Redux", "RestAPI", "VanillaCSS", "Jest"],
-    liveLink: "https://ayokunnumi1.github.io/reelflix-movies/dist/",
-    sourceLink: "https://github.com/Ayokunnumi1/Reelflix-Movie-App",
-    video: reelflixVid,
-    title: "Front End Dev",
-    date_of_creation: "2023",
-  },
-  {
-    id: 5,
-    name: "Conference",
-    image: Conference,
-    description:
-      "An Online Website designed for the Conference of Content Creators.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://ayokunnumi1.github.io/Conference-Page/",
-    sourceLink: "https://github.com/Ayokunnumi1/Conference-Page",
-    video: reelflixVid,
-    title: "Front End Dev",
-    date_of_creation: "2023",
-  },
-  {
-    id: 6,
-    name: "Leaderboard",
-    image: Leaderboard,
-    description:
-      "The leaderboard website displays scores submitted by different players. It also allows you to submit your score.",
-    technologies: ["HTML", "CSS", "JavaScript"],
-    liveLink: "https://ayokunnumi1.github.io/Leaderboard/dist/",
-    sourceLink: "https://github.com/Ayokunnumi1/Leaderboard",
-    video: leaderboardGif,
-    title: "Front End Dev",
-    date_of_creation: "2023",
-  },
-];
 
 const Portfolio = () => {
   const [addToRef] = useVisibilityObserver();
   const [selectedProject, setSelectedProject] = useState(null);
+  const [selectedTechnology, setSelectedTechnology] = useState("All");
   const portfolioRef = useRef(null);
+
+  const projects = [
+    {
+      id: 1,
+      name: "Mentor Me Now",
+      image: Mentor,
+      description:
+        "Mentor Me Now is a web app designed to connect mentees with experienced mentors across various fields. Our app streamlines the process of finding and scheduling sessions with mentors, facilitating personal and professional growth.",
+      technologies: ["React", "TailwindCSS", "Rails", "Postgresql"],
+      liveLink: "https://mentor-me-noww.vercel.app/",
+      sourceLink: "https://github.com/Ayokunnumi1/mentor_me_now_front_end_app",
+      video: mentorMeNowVid,
+      title: "Full Stack Dev",
+      date_of_creation: "2024",
+    },
+    {
+      id: 2,
+      name: "Wise Spender",
+      image: WiseSpender,
+      description:
+        "This is a mobile web app where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
+      technologies: ["Rails", "VanillaCSS", "Postgresql"],
+      liveLink: "https://wise-spender.onrender.com/",
+      sourceLink: "https://github.com/Ayokunnumi1/wise-spender",
+      video: wiseSpenderVid,
+      title: "Full Stack Dev",
+      date_of_creation: "2024",
+    },
+    {
+      id: 3,
+      name: "Haba na Haba Ussd APP",
+      image: ussd,
+      description:
+        "We tackled hunger and food waste with an innovative app!  This app connects people with surplus food to those in need.  As the team lead, I'm proud of our solution that creates a win-win for the community.  (Kindly unmute to listen for more details.)",
+      technologies: [
+        "Rails",
+        "Africastalking API",
+        "Postgresql",
+        "VanillaCSS",
+        "Ngrok",
+      ],
+      liveLink: "#",
+      sourceLink: "https://github.com/Ayokunnumi1/zero-hunger-hackathon",
+      video: hnh,
+      title: "Full Stack Dev",
+      date_of_creation: "2024",
+    },
+    {
+      id: 4,
+      name: "Reelflix",
+      image: Reelflix,
+      description:
+        "A movie website that displays several Tv shows from an external API",
+      technologies: ["JavaScript", "RestAPI", "VanillaCSS", "Jest"],
+      liveLink: "https://ayokunnumi1.github.io/reelflix-movies/dist/",
+      sourceLink: "https://github.com/Ayokunnumi1/Reelflix-Movie-App",
+      video: reelflixVid,
+      title: "Front End Dev",
+      date_of_creation: "2023",
+    },
+    {
+      id: 5,
+      name: "Conference",
+      image: Conference,
+      description:
+        "An Online Website designed for the Conference of Content Creators.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      liveLink: "https://ayokunnumi1.github.io/Conference-Page/",
+      sourceLink: "https://github.com/Ayokunnumi1/Conference-Page",
+      video: conference,
+      title: "Front End Dev",
+      date_of_creation: "2023",
+    },
+    {
+      id: 6,
+      name: "Leaderboard",
+      image: Leaderboard,
+      description:
+        "The leaderboard website displays scores submitted by different players. It also allows you to submit your score.",
+      technologies: ["HTML", "CSS", "React", "JavaScript"],
+      liveLink: "https://ayokunnumi1.github.io/Leaderboard/dist/",
+      sourceLink: "https://github.com/Ayokunnumi1/Leaderboard",
+      video: leaderBoard,
+      title: "Front End Dev",
+      date_of_creation: "2023",
+    },
+  ];
 
   const showPopUp = (project) => {
     const navbar = document.querySelector(".fixed-navbar");
@@ -130,6 +133,12 @@ const Portfolio = () => {
     portfolioRef.current.scrollIntoView({ behavior: "smooth" });
   };
 
+  const filteredProjects = projects.filter(
+    (project) =>
+      selectedTechnology === "All" ||
+      project.technologies.includes(selectedTechnology)
+  );
+
   return (
     <section
       id="portfolio"
@@ -150,18 +159,61 @@ const Portfolio = () => {
         </h3>
         <h3 className="what-i-create mx-5 mt-0">What I Create</h3>
         <div className="m-10 flex flex-col gap-4 md:flex-row justify-center items-center portfolio-text">
-          <div className="flex flex-row gap-4 md:gap-10">
-            <span>All</span>
-            <span>Html/Css</span>
+          <div className="flex flex-row gap-4 md:gap-10 cursor-pointer">
+            <span onClick={() => setSelectedTechnology("All")}>
+              <NavLink
+                className={({ isActive }) =>
+                  selectedTechnology === "All" ? "active-link" : ""
+                }
+              >
+                All
+              </NavLink>
+            </span>
+            <span onClick={() => setSelectedTechnology("JavaScript")}>
+              <NavLink
+                className={({ isActive }) =>
+                  selectedTechnology === "JavaScript" ? "active-link" : ""
+                }
+              >
+                JavaScript
+              </NavLink>
+            </span>
           </div>
-          <div className="flex flex-row gap-10 md:gap-10">
-            <span>JavaScript</span>
-            <span>React</span>
-            <span>Ruby</span>
+          <div className="flex flex-row gap-10 md:gap-10 cursor-pointer">
+            <span
+              onClick={() => setSelectedTechnology("Postgresql")}
+              className="Postgresql"
+            >
+              <NavLink
+                className={({ isActive }) =>
+                  selectedTechnology === "Postgresql" ? "active-link" : ""
+                }
+              >
+                Postgresql
+              </NavLink>
+            </span>
+            <span onClick={() => setSelectedTechnology("React")}>
+              <NavLink
+                className={({ isActive }) =>
+                  selectedTechnology === "React" ? "active-link" : ""
+                }
+              >
+                React
+              </NavLink>
+            </span>
+            <span onClick={() => setSelectedTechnology("Rails")}>
+              <NavLink
+                className={({ isActive }) =>
+                  selectedTechnology === "Rails" ? "active-link" : ""
+                }
+              >
+                Rails
+              </NavLink>
+            </span>
           </div>
         </div>
         <section className="flex flex-col sd:flex-row sd:flex-wrap md:flex-row md:flex-wrap lg:flex-wrap justify-center items-center gap-4 lg:gap-8">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <div key={project.id} className="hover-effect relative group">
               <img
                 className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
