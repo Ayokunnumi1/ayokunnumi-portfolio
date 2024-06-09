@@ -2,9 +2,10 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import { Pagination } from "swiper/modules";
+import "swiper/css/autoplay"; // Import autoplay CSS
+import { Pagination, Autoplay } from "swiper/modules"; // Import Autoplay module
 import Testimonial from "../assets/images/testimonial.png";
-import "../app.css"
+import "../app.css";
 
 const Testimonials = () => {
   return (
@@ -20,8 +21,8 @@ const Testimonials = () => {
           spaceBetween={30}
           loop={true}
           pagination={{ clickable: true }}
-          
-          modules={[Pagination]}
+          autoplay={{ delay: 3000, disableOnInteraction: false }} // Configure autoplay
+          modules={[Pagination, Autoplay]} // Add Autoplay module
           className="mySwiper"
         >
           <SwiperSlide>
@@ -74,7 +75,6 @@ const Testimonials = () => {
                   </div>
                 </div>
               </div>
-              
             </article>
           </SwiperSlide>
         </Swiper>
