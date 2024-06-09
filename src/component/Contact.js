@@ -110,12 +110,12 @@ const Contact = () => {
                 type="text"
                 id="client-name"
                 name="client-name"
-                maxlength="30"
+                maxLength="30"
                 required
                 className="client-name mx-6"
                 onChange={validateName}
               ></input>
-              <span id="name-error-msg" class="name-error-msg"></span>
+              <span id="name-error-msg" className="name-error-msg"></span>
             </div>
 
             <div>
@@ -124,12 +124,12 @@ const Contact = () => {
                 type="email"
                 id="client-email"
                 name="client-email"
-                maxlength="30"
+                maxLength="30"
                 required
                 onChange={validateEmail}
                 className="client-email mx-6"
               ></input>
-              <span id="email-error-msg" class="email-error-msg"></span>
+              <span id="email-error-msg" className="email-error-msg"></span>
             </div>
           </div>
 
@@ -145,7 +145,7 @@ const Contact = () => {
               onChange={validateMessage}
               required
             ></textarea>
-            <span id="text-error-msg" class="text-error-msg"></span>
+            <span id="text-error-msg" className="text-error-msg"></span>
             <button
               type="submit"              
               onClick={validateSubmit}
