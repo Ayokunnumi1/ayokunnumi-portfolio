@@ -32,7 +32,16 @@ const InterestingFacts = () => {
                   (<span>2024 -</span>
                   <span>present</span>)
                 </p>
-                <p className="qualification-sch">Certificate</p>
+                <p className="qualification-sch">
+                  <a
+                    href="https://drive.google.com/file/d/1A0wLKNevEACJv0R5ocqiBeoDMlCj6tkq/view"
+                    target="_blank"
+                    rel="noreferrer"
+                    className=""
+                  >
+                    View Certificate
+                  </a>
+                </p>
               </div>
             </div>
             <div className="flex gap-4">
