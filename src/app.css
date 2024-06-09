@@ -6,6 +6,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 .overlayy {
@@ -393,6 +394,37 @@
   display: flex;
   gap: 10px;
   margin-top: 20px;
+}
+
+.active-link {
+  border-bottom: 2px solid #76E1A2;
+}
+
+.loading-screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000;
+}
+
+.loading-line {
+  width: 2px;
+  height: 200px;
+  background-color: #fff;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 @media screen and (min-width:485px) {
