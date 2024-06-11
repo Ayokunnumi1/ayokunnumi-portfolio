@@ -54,7 +54,7 @@ const Portfolio = () => {
     },
     {
       id: 3,
-      name: "Haba na Haba Ussd APP",
+      name: "Haba na Haba Ussd App",
       image: ussd,
       description:
         "We tackled hunger and food waste with an innovative app!  This app connects people with surplus food to those in need.  As the team lead, I'm proud of our solution that creates a win-win for the community.  (Kindly unmute to listen for more details.)",
