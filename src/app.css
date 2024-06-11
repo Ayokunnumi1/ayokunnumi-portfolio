@@ -427,6 +427,13 @@
   }
 }
 
+#client-name,
+#client-email,
+#client-text {
+  font-weight: 100;
+  font-size: 15px;
+}
+
 @media screen and (min-width:485px) {
   .qualification {
     font-size: 15px;
