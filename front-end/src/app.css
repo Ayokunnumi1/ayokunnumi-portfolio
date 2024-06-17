@@ -9,6 +9,10 @@
   text-decoration: none;
 }
 
+.custom-border {
+  border: 3px solid red;
+}
+
 .overlayy {
   position: relative;
 }
@@ -298,7 +302,6 @@
   background-color: #76e1a2;
   width: 12px;
   height: 12px;
-
 }
 
 .name-error-msg,

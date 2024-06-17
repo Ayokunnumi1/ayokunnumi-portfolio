@@ -7,7 +7,7 @@ import MyServices from "./component/MyServices";
 import Testimonials from "./component/Testimonials";
 import MySkills from "./component/MySkills";
 import InterestingFacts from "./component/InterestingFacts";
-import MyContent from "./component/MyContent";
+import MyContent from "./component/myContent";
 import Contact from "./component/Contact";
 import "../src/app.css";
 

@@ -8,7 +8,7 @@ export default defineConfig({
   title: 'Ayokunnumi\'s portfolio',
 
   projectId: 'id7zsgea',
-  dataset: 'sanity_database_portfolio',
+  dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
 
