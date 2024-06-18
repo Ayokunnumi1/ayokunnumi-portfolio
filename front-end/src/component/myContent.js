@@ -1,10 +1,8 @@
 import React, { useEffect, useState } from "react";
-// import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import { urlFor, client } from "../client";
 import LoaderSpinner from "./LoaderSpinner";
 
 const MyContent = () => {
-  // const [addToRef] = useVisibilityObserver();
   const [myContent, setMyContent] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -37,17 +35,14 @@ const MyContent = () => {
         {loading ? (
           <LoaderSpinner />
         ) : (
-          <article
-            
-            className="flex flex-col gap-10 md:gap-3 md:flex-row mx-10 mt-8"
-          >
+          <article className="flex flex-col gap-10 md:gap-3 md:flex-row mx-10 mt-8">
             {myContent?.map((content) => (
               <a
                 key={content._id}
                 href={content.link}
                 target="_blank"
                 rel="noreferrer"
-                className=" zoom-out rounded-3xl border-2 border-custom-green"
+                className="zoom-out rounded-3xl border-2 border-custom-green"
               >
                 <div>
                   <img
