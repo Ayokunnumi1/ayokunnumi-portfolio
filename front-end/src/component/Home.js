@@ -1,5 +1,5 @@
-import { useEffect} from "react";
-import { Link as ScrollLink } from 'react-scroll';
+import { useEffect } from "react";
+import { Link as ScrollLink } from "react-scroll";
 import Menu from "../assets/images/menu.png";
 import myPic from "../assets/images/myPic.png";
 import linkedIn from "../assets/images/linked_in_circled.png";
@@ -12,8 +12,8 @@ import "../app.css";
 
 const Home = () => {
   const [addToRef] = useVisibilityObserver();
-  
-    useEffect(() => {
+
+  useEffect(() => {
     const menu = document.querySelector(".menu");
     const navLink = document.querySelector(".nav-link");
     const closeIconElement = document.querySelector(".close-icon");
@@ -66,7 +66,6 @@ const Home = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    
   }, []);
 
   return (
@@ -157,7 +156,7 @@ const Home = () => {
         <div className="w-80 h-80 bg-[#374B3F] rounded-full flex flex-col items-center justify-center">
           <div className="w-64 h-64 rounded-full bg-custom-green flex flex-col items-center justify-center">
             <img
-              className="w-80 h-80 object-cover rounded-full rotate-img"
+              className=" rounded-full rotate-img"
               src={myPic}
               alt="my face"
             />
@@ -169,17 +168,41 @@ const Home = () => {
           <span className="text-[#76E1A2]">Web Developer</span>
         </h3>
         <div className="flex flex-row justify-center items-center gap-2 mt-5">
-          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
-            <img src={linkedIn} alt="linkedIn" />
+          <div className="zoom-out w-8 h-8 rounded-full border-2 border-custom-green">
+            <a
+              href="https://www.linkedin.com/in/ayokunnumiomololu/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={linkedIn} alt="linkedIn" />
+            </a>
           </div>
-          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
-            <img src={twitter} alt="twitter" />
+          <div className="zoom-out w-8 h-8 rounded-full border-2 border-custom-green">
+            <a
+              href="https://x.com/AyokunnumiA"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={twitter} alt="twitter" />
+            </a>
           </div>
-          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
-            <img src={medium} alt="medium" />
+          <div className="zoom-out w-8 h-8 rounded-full border-2 border-custom-green">
+            <a
+              href="https://medium.com/@omololuayk"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={medium} alt="medium" />
+            </a>
           </div>
-          <div className="w-8 h-8 rounded-full border-2 border-custom-green">
-            <img src={youtube} alt="youtube" />
+          <div className="zoom-out w-8 h-8 rounded-full border-2 border-custom-green">
+            <a
+              href="https://www.youtube.com/channel/UC6uE2NDjsoKD1UD8G16gdmw"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <img src={youtube} alt="youtube" />
+            </a>
           </div>
         </div>
       </div>
