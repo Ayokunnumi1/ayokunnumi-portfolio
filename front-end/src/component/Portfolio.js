@@ -1,21 +1,10 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import useVisibilityObserver from "../hooks/useVisibilityObserver.js";
-import Mentor from "../assets/images/mentor_me.jpg";
-import WiseSpender from "../assets/images/wise_spender.jpg";
-import Reelflix from "../assets/images/reelflix.jpg";
-import Conference from "../assets/images/conference.jpg";
-import Leaderboard from "../assets/images/leaderboard.jpg";
 import visible from "../assets/images/visible.svg";
 import github from "../assets/images/github.svg";
 import closeIcon from "../assets/images/closeIcon.svg";
-import mentorMeNowVid from "../assets/videos/mentor-me-now-vid.mp4";
-import wiseSpenderVid from "../assets/videos/wise-spender-vid.mp4";
-import reelflixVid from "../assets/videos/reelflix-vid.mp4";
-import hnh from "../assets/videos/hnhvid.mp4";
-import ussd from "../assets/images/ussd.jpg";
-import leaderBoard from "../assets/videos/leaderboard.mp4";
-import conference from "../assets/videos/conference-vid.mp4";
+import { urlFor, client } from "../client";
 
 import "../app.css";
 
@@ -24,93 +13,32 @@ const Portfolio = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [selectedTechnology, setSelectedTechnology] = useState("All");
   const portfolioRef = useRef(null);
+  const [projects, setProjects] = useState([]);
 
-  const projects = [
-    {
-      id: 1,
-      name: "Mentor Me Now",
-      image: Mentor,
-      description:
-        "Mentor Me Now is a web app designed to connect mentees with experienced mentors across various fields. Our app streamlines the process of finding and scheduling sessions with mentors, facilitating personal and professional growth.",
-      technologies: ["React", "TailwindCSS", "Rails", "Postgresql"],
-      liveLink: "https://mentor-me-noww.vercel.app/",
-      sourceLink: "https://github.com/Ayokunnumi1/mentor_me_now_front_end_app",
-      video: mentorMeNowVid,
-      title: "Full Stack Dev",
-      date_of_creation: "2024",
-    },
-    {
-      id: 2,
-      name: "Wise Spender",
-      image: WiseSpender,
-      description:
-        "This is a mobile web app where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.",
-      technologies: ["Rails", "VanillaCSS", "Postgresql"],
-      liveLink: "https://wise-spender.onrender.com/",
-      sourceLink: "https://github.com/Ayokunnumi1/wise-spender",
-      video: wiseSpenderVid,
-      title: "Full Stack Dev",
-      date_of_creation: "2024",
-    },
-    {
-      id: 3,
-      name: "Haba na Haba Ussd App",
-      image: ussd,
-      description:
-        "We tackled hunger and food waste with an innovative app!  This app connects people with surplus food to those in need.  As the team lead, I'm proud of our solution that creates a win-win for the community.  (Kindly unmute to listen for more details.)",
-      technologies: [
-        "Rails",
-        "Africastalking API",
-        "Postgresql",
-        "VanillaCSS",
-        "Ngrok",
-      ],
-      liveLink: "#",
-      sourceLink: "https://github.com/Ayokunnumi1/zero-hunger-hackathon",
-      video: hnh,
-      title: "Full Stack Dev",
-      date_of_creation: "2024",
-    },
-    {
-      id: 4,
-      name: "Reelflix",
-      image: Reelflix,
-      description:
-        "A movie website that displays several Tv shows from an external API",
-      technologies: ["JavaScript", "RestAPI", "VanillaCSS", "Jest"],
-      liveLink: "https://ayokunnumi1.github.io/reelflix-movies/dist/",
-      sourceLink: "https://github.com/Ayokunnumi1/Reelflix-Movie-App",
-      video: reelflixVid,
-      title: "Front End Dev",
-      date_of_creation: "2023",
-    },
-    {
-      id: 5,
-      name: "Conference",
-      image: Conference,
-      description:
-        "An Online Website designed for the Conference of Content Creators.",
-      technologies: ["HTML", "CSS", "JavaScript"],
-      liveLink: "https://ayokunnumi1.github.io/Conference-Page/",
-      sourceLink: "https://github.com/Ayokunnumi1/Conference-Page",
-      video: conference,
-      title: "Front End Dev",
-      date_of_creation: "2023",
-    },
-    {
-      id: 6,
-      name: "Leaderboard",
-      image: Leaderboard,
-      description:
-        "The leaderboard website displays scores submitted by different players. It also allows you to submit your score.",
-      technologies: ["HTML", "CSS", "React", "JavaScript"],
-      liveLink: "https://ayokunnumi1.github.io/Leaderboard/dist/",
-      sourceLink: "https://github.com/Ayokunnumi1/Leaderboard",
-      video: leaderBoard,
-      title: "Front End Dev",
-      date_of_creation: "2023",
-    },
-  ];
+  useEffect(() => {
+    const query = '*[_type == "projects"] | order(_updatedAt asc)';
+
+    client.fetch(query).then((data) => {
+      setProjects(data);
+      console.log(data);
+    });
+  }, []);
+
+  const getFileUrl = (asset) => {
+    // Check if the asset is valid
+    if (!asset || !asset._ref) {
+      return "";
+    }
+
+    // Extract projectId and dataset from client configuration
+    const { projectId, dataset } = client.config();
+
+    // Split the asset _ref to get id and extension
+    const [, id, extension] = asset._ref.split("-");
+
+    // Construct and return the file URL
+    return `https://cdn.sanity.io/files/${projectId}/${dataset}/${id}.${extension}`;
+  };
 
   const showPopUp = (project) => {
     const navbar = document.querySelector(".fixed-navbar");
@@ -139,6 +67,11 @@ const Portfolio = () => {
       project.technologies.includes(selectedTechnology)
   );
 
+  const videoUrl =
+    selectedProject && selectedProject.video
+      ? getFileUrl(selectedProject.video.asset)
+      : "";
+
   return (
     <section
       id="portfolio"
@@ -158,7 +91,7 @@ const Portfolio = () => {
           <span className="text-custom-green">Work</span>
         </h3>
         <h3 className="what-i-create mx-5 mt-0">What I Create</h3>
-        <div className="m-10 flex flex-col gap-4 md:flex-row justify-center items-center portfolio-text">
+        <nav className="m-10 flex flex-col gap-4 md:flex-row justify-center items-center portfolio-text">
           <div className="flex flex-row gap-4 md:gap-10 cursor-pointer">
             <span onClick={() => setSelectedTechnology("All")}>
               <NavLink
@@ -181,12 +114,12 @@ const Portfolio = () => {
           </div>
           <div className="flex flex-row gap-10 md:gap-10 cursor-pointer">
             <span
-              onClick={() => setSelectedTechnology("Postgresql")}
+              onClick={() => setSelectedTechnology("PostgreSQL")}
               className="Postgresql"
             >
               <NavLink
                 className={({ isActive }) =>
-                  selectedTechnology === "Postgresql" ? "active-link" : ""
+                  selectedTechnology === "PostgreSQL" ? "active-link" : ""
                 }
               >
                 Postgresql
@@ -211,13 +144,13 @@ const Portfolio = () => {
               </NavLink>
             </span>
           </div>
-        </div>
+        </nav>
         <section className="flex flex-col sd:flex-row sd:flex-wrap md:flex-row md:flex-wrap lg:flex-wrap justify-center items-center gap-4 lg:gap-8">
           {filteredProjects.map((project) => (
-            <div key={project.id} className="hover-effect relative group">
+            <div key={project._id} className="hover-effect relative group">
               <img
                 className="w-80 sd:w-48 md:w-52 lg:w-80 rounded-3xl border-2 border-custom-green"
-                src={project.image}
+                src={urlFor(project.image)}
                 alt={project.name}
               />
               <div className="absolute inset-0 flex justify-center items-center space-x-2.5 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
@@ -256,7 +189,7 @@ const Portfolio = () => {
               </ul>
               <video
                 className="detail-img w-full my-4"
-                src={selectedProject.video}
+                src={videoUrl}
                 controls
                 autoPlay
                 muted
