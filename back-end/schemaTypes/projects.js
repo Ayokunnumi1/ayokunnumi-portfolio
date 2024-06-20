@@ -1,16 +1,29 @@
 export default {
-  name: 'project',
+  name: 'projects',
   type: 'document',
-  title: 'Project',
+  title: 'Projects',
   fields: [
     {name: 'name', type: 'string', title: 'Name'},
-    {name: 'image', type: 'image', title: 'Image'},
+    {name: 'image', type: 'image', title: 'Image', options: {hotspot: true}},
     {name: 'description', type: 'text', title: 'Description'},
-    {name: 'technologies', type: 'array', of: [{type: 'string'}], title: 'Technologies'},
-    {name: 'liveLink', type: 'url', title: 'Live Link'},
-    {name: 'sourceLink', type: 'url', title: 'Source Link'},
-    {name: 'video', type: 'url', title: 'Video'},
+    {
+      name: 'technologies',
+      title: 'Technologies',
+      type: 'array',
+      of: [{type: 'string', name: 'technology', title: 'Technology'}],
+    },
+    {name: 'liveLink', type: 'string', title: 'Live Link'},
+    {name: 'sourceLink', type: 'string', title: 'Source Link'},
+    {name: 'video', type: 'file', title: 'My Video'},
     {name: 'title', type: 'string', title: 'Title'},
-    {name: 'date_of_creation', type: 'string', title: 'Date of Creation'},
+    {
+      name: 'date_of_creation',
+      type: 'string',
+      title: 'Date of Creation',
+      validation: Rule => Rule.regex(/^\d{4}$/, {
+        name: 'year',
+        invert: false
+      }).error('Please enter a valid year in the format YYYY')
+    },
   ],
 }
