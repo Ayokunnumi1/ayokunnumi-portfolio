@@ -35,7 +35,9 @@
 }
 
 .rotate-img {
-  transform: rotate(-17deg) translateX(10px);
+  padding: 8px;
+  transform: rotate(-17deg) translateX(5px);
+  /* border: 3px solid red; */
 }
 
 .my-name {
@@ -315,7 +317,7 @@
 }
 
 .zoom-out {
-  transition: transform 0.6s ease-in-out;
+  transition: transform 0.4s ease-in-out;
 }
 
 .zoom-out:hover {
