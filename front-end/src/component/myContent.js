@@ -1,26 +1,24 @@
-import React, { useEffect, useState } from "react";
+// import useVisibilityObserver from "../hooks/useVisibilityObserver";
+import { easeInOut, motion } from "framer-motion";
+import { useEffect, useState } from "react";
 import { urlFor, client } from "../client";
 import LoaderSpinner from "./LoaderSpinner";
 
 const MyContent = () => {
+  // const [addToRef] = useVisibilityObserver();
   const [myContent, setMyContent] = useState([]);
   const [loading, setLoading] = useState(false);
+  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
     setLoading(true);
     const query = '*[_type == "contents"]';
 
-    client
-      .fetch(query)
-      .then((data) => {
-        setMyContent(data);
-        setLoading(false);
-        console.log(data);
-      })
-      .catch((error) => {
-        console.error("Error fetching content:", error);
-        setLoading(false);
-      });
+    client.fetch(query).then((data) => {
+      setMyContent(data);
+      setLoading(false);
+      console.log(data);
+    });
   }, []);
 
   return (
@@ -32,38 +30,42 @@ const MyContent = () => {
         </h3>
         <h3 className="what-i-use mx-5 mt-0">What I Share</h3>
 
-        {loading ? (
-          <LoaderSpinner />
-        ) : (
-          <article className="flex flex-col gap-10 md:gap-3 md:flex-row mx-10 mt-8">
-            {myContent?.map((content) => (
-              <a
-                key={content._id}
-                href={content.link}
-                target="_blank"
-                rel="noreferrer"
-                className="zoom-out rounded-3xl border-2 border-custom-green"
-              >
+        {loading && <LoaderSpinner />}
+
+        <article className="flex flex-col gap-10 md:gap-3 md:flex-row mx-10 mt-8">
+          {myContent.map(({ _id, link, icon, techStack, date, text }) => (
+            <motion.div
+              key={_id}
+              animate={animateCard}
+              transition={{
+                duration: 0.25,
+                ease: easeInOut,
+                staggerChildren: 0.5,
+              }}
+              whileInView={{ scale: [0, 1] }}
+              className="rounded-3xl border-2 border-custom-green"
+            >
+              <a href={link} target="_blank" rel="noreferrer">
                 <div>
                   <img
                     className="bg-cover bg-no-repeat w-full rounded-3xl h-56"
-                    src={urlFor(content.icon)}
-                    alt="content"
+                    src={urlFor(icon)}
+                    alt="react content"
                   />
                   <div className="p-5">
                     <p className="text-center mb-3">
                       <span className="text-custom-green content-text">
-                        {content.techStack}
+                        {techStack}
                       </span>
-                      <span className="content-date"> {content.date}</span>
+                      <span className="content-date">{date}</span>
                     </p>
-                    <p className="text-center content-text">{content.text}</p>
+                    <p className="text-center content-text">{text}</p>
                   </div>
                 </div>
               </a>
-            ))}
-          </article>
-        )}
+            </motion.div>
+          ))}
+        </article>
       </div>
     </section>
   );
