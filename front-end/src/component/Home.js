@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Menu from "../assets/images/menu.png";
-import myPic from "../assets/images/myPic.png";
+import myPic from "../assets/images/myPic.webp";
 import linkedIn from "../assets/images/linked_in_circled.png";
 import twitter from "../assets/images/twitter_circled.png";
 import medium from "../assets/images/medium.png";
@@ -155,11 +155,15 @@ const Home = () => {
       >
         <div className="w-80 h-80 bg-[#374B3F] rounded-full flex flex-col items-center justify-center">
           <div className="w-64 h-64 rounded-full bg-custom-green flex flex-col items-center justify-center">
-            <img
-              className=" rounded-full rotate-img"
-              src={myPic}
-              alt="my face"
-            />
+            <picture>
+              <source srcset={myPic.avif} type="image/avif" />
+              <source srcset={myPic.webp} type="image/webp" />
+              <img
+                className=" rounded-full rotate-img"
+                src={myPic}
+                alt="my face"
+              />
+            </picture>
           </div>
         </div>
         <h3 className="my-name">AYO OMOLOLU</h3>
