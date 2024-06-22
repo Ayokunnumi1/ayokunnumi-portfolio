@@ -5,19 +5,16 @@ module.exports = {
     extend: {
       screens: {
         sd: "485px",
-        xlg: "1300px"
+        xlg: "1300px",
       },
       spacing: {
-        "gap-1": "28rem"
+        "gap-1": "28rem",
       },
       colors: {
         "custom-gray": "#2A3132",
         "custom-green": "#6AB187",
         "custom-black": "#272A2B",
       },
-      backgroundImage: (theme) => ({
-        "home-pg-bg-image": "url('./assets/tech-bg.jpg')",
-      }),
       rounded: {
         51: "51px",
       },
