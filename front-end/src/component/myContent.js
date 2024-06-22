@@ -50,6 +50,7 @@ const MyContent = () => {
                   <img
                     className="bg-cover bg-no-repeat w-full rounded-3xl h-56"
                     src={urlFor(icon)}
+                    loading="lazy"
                     alt="react content"
                   />
                   <div className="p-5">
