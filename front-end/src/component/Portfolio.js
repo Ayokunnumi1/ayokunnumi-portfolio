@@ -157,6 +157,7 @@ const Portfolio = () => {
                 <img
                   src={visible}
                   alt="visible"
+                  loading="lazy"
                   className="cursor-pointer"
                   onClick={() => showPopUp(project)}
                 />
