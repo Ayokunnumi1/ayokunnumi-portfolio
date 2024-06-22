@@ -199,6 +199,11 @@
   background-color: #101011;
 }
 
+/* Default background image using JPG */
+.bg-home-pg-bg-image {
+  background-image: url('./assets/tech-bg.jpg')
+}
+
 .nav-link {
   position: fixed;
   top: 0;
@@ -245,6 +250,26 @@
 
 .no-scroll {
   overflow: hidden;
+}
+
+@supports (background-image: url('./assets/tech-bg.webp')) {
+  .nav-link {
+    background-image: url('./assets/tech-bg.webp');
+  }
+
+  .bg-home-pg-bg-image {
+    background-image: url('./assets/tech-bg.webp');
+  }
+}
+
+@supports (background-image: url('./assets/tech-bg.avif')) {
+  .nav-link {
+    background-image: url('./assets/tech-bg.avif');
+  }
+
+  .bg-home-pg-bg-image {
+    background-image: url('./assets/tech-bg.avif');
+  }
 }
 
 .active-hover-effect:hover {
@@ -369,6 +394,7 @@
   font-size: 25px;
   font-weight: 600;
 }
+
 .project-description {
   margin: 20px 0;
 }
