@@ -158,12 +158,12 @@ const Home = () => {
         <div className="w-80 h-80 bg-[#374B3F] rounded-full flex flex-col items-center justify-center">
           <div className="w-64 h-64 rounded-full bg-custom-green flex flex-col items-center justify-center">
             <picture>
-              <source srcSet={myPicWebP} type="image/avif" />
-              <source srcSet={myPicAvif} type="image/webp" />
+              <source srcSet={myPicAvif} type="image/avif" />
+              <source srcSet={myPicWebP} type="image/webp" />
               <img
-                className=" rounded-full rotate-img"
+                className="rounded-full rotate-img"
                 src={myPic}
-                loading="lazy"
+                loading="eager"
                 alt="my face"
               />
             </picture>
