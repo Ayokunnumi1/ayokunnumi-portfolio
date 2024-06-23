@@ -1,11 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.6182e37e.css",
-    "main.js": "/static/js/main.49c6cd18.js",
+    "main.css": "/static/css/main.afbf6a2f.css",
+    "main.js": "/static/js/main.568a9f3a.js",
     "static/js/796.d3e96a75.chunk.js": "/static/js/796.d3e96a75.chunk.js",
     "static/js/165.19ede7c7.chunk.js": "/static/js/165.19ede7c7.chunk.js",
     "static/media/myPic.png": "/static/media/myPic.2cc7086c98dfd6ab71a5.png",
     "static/media/tech-bg.jpg": "/static/media/tech-bg.acd79e75eb5ecc12d5d3.jpg",
+    "static/media/myPic.avif": "/static/media/myPic.0b7492a98251d73c7028.avif",
+    "static/media/myPic.webp": "/static/media/myPic.3169a4bf24546e630e35.webp",
+    "static/media/tech-bg.avif": "/static/media/tech-bg.a5de66fc6ae91f4dd87d.avif",
+    "static/media/tech-bg.webp": "/static/media/tech-bg.60b4b1ee57e508c33444.webp",
     "static/media/backend.svg": "/static/media/backend.b7dbb750159fef8e6db4ee6da60a1067.svg",
     "static/media/graduation_cap.svg": "/static/media/graduation_cap.fde40e29102c121e90db31b9b6eb2be6.svg",
     "static/media/fullStack.svg": "/static/media/fullStack.74c9088ccc415f29cfb998976f5f6d54.svg",
@@ -18,13 +22,13 @@
     "static/media/visible.svg": "/static/media/visible.aecd55b07a7b814df5ce2bba2db9d962.svg",
     "index.html": "/index.html",
     "static/media/closeIcon.svg": "/static/media/closeIcon.58284915c7f892fe02a8d40aa987df76.svg",
-    "main.6182e37e.css.map": "/static/css/main.6182e37e.css.map",
-    "main.49c6cd18.js.map": "/static/js/main.49c6cd18.js.map",
+    "main.afbf6a2f.css.map": "/static/css/main.afbf6a2f.css.map",
+    "main.568a9f3a.js.map": "/static/js/main.568a9f3a.js.map",
     "796.d3e96a75.chunk.js.map": "/static/js/796.d3e96a75.chunk.js.map",
     "165.19ede7c7.chunk.js.map": "/static/js/165.19ede7c7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6182e37e.css",
-    "static/js/main.49c6cd18.js"
+    "static/css/main.afbf6a2f.css",
+    "static/js/main.568a9f3a.js"
   ]
 }
