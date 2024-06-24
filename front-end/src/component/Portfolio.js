@@ -19,44 +19,42 @@ const Portfolio = () => {
     const query = '*[_type == "projects"] | order(_updatedAt asc)';
 
     client.fetch(query).then((data) => {
-      setProjects(data);
-      console.log(data);
+      setProjects(data);      
     });
   }, []);
 
   const getFileUrl = (asset) => {
-    // Check if the asset is valid
     if (!asset || !asset._ref) {
       return "";
     }
 
-    // Extract projectId and dataset from client configuration
+    
     const { projectId, dataset } = client.config();
 
-    // Split the asset _ref to get id and extension
+    
     const [, id, extension] = asset._ref.split("-");
 
-    // Construct and return the file URL
+    
     return `https://cdn.sanity.io/files/${projectId}/${dataset}/${id}.${extension}`;
   };
 
   const showPopUp = (project) => {
     const navbar = document.querySelector(".fixed-navbar");
     if (navbar) {
-      navbar.style.display = "none"; // Hide the fixed navbar
+      navbar.style.display = "none";
     }
 
     setSelectedProject(project);
-    document.body.style.overflow = "hidden"; // Prevent background scrolling
+    document.body.style.overflow = "hidden"; 
     window.scrollTo(0, 0);
   };
 
   const closePopUp = () => {
     setSelectedProject(null);
-    document.body.style.overflow = "auto"; // Restore background scrolling
+    document.body.style.overflow = "auto";
     const navbar = document.querySelector(".fixed-navbar");
     if (navbar) {
-      navbar.style.display = "flex"; // Show the fixed navbar
+      navbar.style.display = "flex";
     }
     portfolioRef.current.scrollIntoView({ behavior: "smooth" });
   };

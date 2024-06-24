@@ -116,7 +116,7 @@ Jest
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-<!-- - [Live Demo Link](https://wise-spender.onrender.com/) -->
+- [Live Demo Link](https://ayokunnumi-portfolio.vercel.app/)
 
 <!-- ## 🚀 Video Demo <a name="live-demo"></a>
 

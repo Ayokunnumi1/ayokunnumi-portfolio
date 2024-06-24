@@ -5,7 +5,6 @@ import { urlFor, client } from "../client";
 import LoaderSpinner from "./LoaderSpinner";
 
 const MyContent = () => {
-  // const [addToRef] = useVisibilityObserver();
   const [myContent, setMyContent] = useState([]);
   const [loading, setLoading] = useState(false);
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
@@ -17,7 +16,6 @@ const MyContent = () => {
     client.fetch(query).then((data) => {
       setMyContent(data);
       setLoading(false);
-      console.log(data);
     });
   }, []);
 

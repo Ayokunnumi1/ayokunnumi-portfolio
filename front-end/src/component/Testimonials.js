@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/autoplay"; // Import autoplay CSS
-import { Pagination, Autoplay } from "swiper/modules"; // Import Autoplay module
+import "swiper/css/autoplay";
+import { Pagination, Autoplay } from "swiper/modules";
 import "../app.css";
 import { urlFor, client } from "../client";
 import LoaderSpinner from "./LoaderSpinner";
@@ -19,7 +19,6 @@ const Testimonials = () => {
     client.fetch(query).then((data) => {
       setTestimonials(data);
       setLoading(false);
-      console.log(data)
     });
   }, []);
 
