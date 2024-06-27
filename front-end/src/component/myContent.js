@@ -1,4 +1,3 @@
-// import useVisibilityObserver from "../hooks/useVisibilityObserver";
 import { easeInOut, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { urlFor, client } from "../client";
