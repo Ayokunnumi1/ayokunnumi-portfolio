@@ -34,7 +34,7 @@ const InterestingFacts = () => {
                 </p>
                 <p className="qualification-sch">
                   <a
-                    href="https://drive.google.com/file/d/1A0wLKNevEACJv0R5ocqiBeoDMlCj6tkq/view"
+                    href="https://drive.google.com/file/d/1g6udRZolgpqNdTlkBfLGqo-oSDgJViof/view?usp=sharing"
                     target="_blank"
                     rel="noreferrer"
                     className=""
