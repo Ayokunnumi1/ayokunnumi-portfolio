@@ -134,7 +134,7 @@ const Home = () => {
             </li>
             <li className="resume border-2 rounded px-1 w-20 border-custom-green">
               <a
-                href="https://ayokunnumi-full-stack-resume.tiiny.site/"
+                href="https://ayokunnumi-full-stack-cv.tiiny.site/"
                 target="_blank"
                 rel="noreferrer"
               >
