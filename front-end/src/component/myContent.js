@@ -1,4 +1,3 @@
-import { easeInOut, motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { urlFor, client } from "../client";
 import LoaderSpinner from "./LoaderSpinner";
@@ -6,7 +5,6 @@ import LoaderSpinner from "./LoaderSpinner";
 const MyContent = () => {
   const [myContent, setMyContent] = useState([]);
   const [loading, setLoading] = useState(false);
-  const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
     setLoading(true);
@@ -31,17 +29,7 @@ const MyContent = () => {
 
         <article className="flex flex-col gap-10 md:gap-3 md:flex-row mx-10 mt-8">
           {myContent.map(({ _id, link, icon, techStack, date, text }) => (
-            <motion.div
-              key={_id}
-              animate={animateCard}
-              transition={{
-                duration: 0.25,
-                ease: easeInOut,
-                staggerChildren: 0.5,
-              }}
-              whileInView={{ scale: [0, 1] }}
-              className="rounded-3xl border-2 border-custom-green"
-            >
+            <div key={_id} className="rounded-3xl border-2 border-custom-green">
               <a href={link} target="_blank" rel="noreferrer">
                 <div>
                   <img
@@ -61,7 +49,7 @@ const MyContent = () => {
                   </div>
                 </div>
               </a>
-            </motion.div>
+            </div>
           ))}
         </article>
       </div>
