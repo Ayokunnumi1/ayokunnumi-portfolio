@@ -28,42 +28,42 @@ const MySkills = () => {
       {
         progressClass: "circular-progress",
         valueClass: "progress-value",
-        endValue: 70,
+        endValue: 99,
       },
       {
         progressClass: "circular-progress-two",
         valueClass: "progress-value-two",
-        endValue: 90,
+        endValue: 99,
       },
       {
         progressClass: "circular-progress-three",
         valueClass: "progress-value-three",
-        endValue: 80,
+        endValue: 99,
       },
       {
         progressClass: "circular-progress-four",
         valueClass: "progress-value-four",
-        endValue: 90,
+        endValue: 99,
       },
       {
         progressClass: "circular-progress-five",
         valueClass: "progress-value-five",
-        endValue: 90,
+        endValue: 99,
       },
       {
         progressClass: "circular-progress-six",
         valueClass: "progress-value-six",
-        endValue: 80,
+        endValue: 99,
       },
       {
         progressClass: "circular-progress-seven",
         valueClass: "progress-value-seven",
-        endValue: 90,
+        endValue: 99,
       },
       {
         progressClass: "circular-progress-eight",
         valueClass: "progress-value-eight",
-        endValue: 95,
+        endValue: 99,
       },
     ];
 
