@@ -56,8 +56,8 @@ const MyServices = () => {
               Full Stack Developer
             </h4>
             <p className="mt-5 text-slate-300">
-              Built a budget app that helped
-              <span className="text-[#76E1A2]"> 18+</span> users save money
+              Built a food bank app that saved
+              <span className="text-[#76E1A2]"> 1000+</span> users from food hunger
             </p>
           </div>
         </article>
