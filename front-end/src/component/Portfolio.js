@@ -16,10 +16,10 @@ const Portfolio = () => {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    const query = '*[_type == "projects"] | order(_updatedAt asc)';
+    const query = '*[_type == "projects"] | order(_updatedAt desc)';
 
     client.fetch(query).then((data) => {
-      setProjects(data);      
+      setProjects(data);
     });
   }, []);
 
@@ -28,13 +28,10 @@ const Portfolio = () => {
       return "";
     }
 
-    
     const { projectId, dataset } = client.config();
 
-    
     const [, id, extension] = asset._ref.split("-");
 
-    
     return `https://cdn.sanity.io/files/${projectId}/${dataset}/${id}.${extension}`;
   };
 
@@ -45,7 +42,7 @@ const Portfolio = () => {
     }
 
     setSelectedProject(project);
-    document.body.style.overflow = "hidden"; 
+    document.body.style.overflow = "hidden";
     window.scrollTo(0, 0);
   };
 
