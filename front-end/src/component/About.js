@@ -12,9 +12,10 @@ const About = () => {
           <div className="w-20 h-1 bg-custom-green"></div>
         </div>
         <p className="about-me-text lg:px-36 p-6">
-          "Hackathon-winning Full-Stack Developer passionate about building
-          scalable, user-centric solutions and empowering others through
-          mentorship and innovative tech."
+          "Full-Stack Developer with 2+ years of Ruby on Rails experience,
+          building data-driven platforms for startups and NGOs. Hackathon
+          winner. I use AI tools every day to build faster, and I love
+          explaining tech in simple terms."
         </p>
       </div>
     </section>

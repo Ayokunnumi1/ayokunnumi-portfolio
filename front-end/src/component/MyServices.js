@@ -25,12 +25,8 @@ const MyServices = () => {
               Front End Developer
             </h4>
             <p className="mt-5 text-slate-300">
-              Helped
-              <span className="text-[#76E1A2] my-service_title_text">
-                {" "}
-                100+
-              </span>{" "}
-              Microverse students build React project
+              Turn Figma designs into responsive, user-friendly React
+              interfaces.
             </p>
           </div>
           <div
@@ -42,9 +38,8 @@ const MyServices = () => {
               Back End Developer
             </h4>
             <p className="mt-5 text-slate-300">
-              Helped
-              <span className="text-[#76E1A2]"> 90+</span> Microverse students
-              build Command Line Interface
+              Build secure Ruby on Rails APIs, authentication and PostgreSQL
+              databases.
             </p>
           </div>
           <div
@@ -56,8 +51,9 @@ const MyServices = () => {
               Full Stack Developer
             </h4>
             <p className="mt-5 text-slate-300">
-              Built a food bank app that saved
-              <span className="text-[#76E1A2]"> 1000+</span> users from food hunger
+              Built a food bank app that helped
+              <span className="text-[#76E1A2]"> 1,000+</span> people in Uganda
+              access food.
             </p>
           </div>
         </article>

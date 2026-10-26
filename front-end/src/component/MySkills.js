@@ -1,81 +1,35 @@
-import { useEffect } from "react";
 import useVisibilityObserver from "../hooks/useVisibilityObserver";
+
+const skillGroups = [
+  {
+    title: "Front-End",
+    skills: ["JavaScript", "React", "Redux", "Tailwind CSS", "HTML5", "CSS3"],
+  },
+  {
+    title: "Back-End",
+    skills: ["Ruby on Rails", "PostgreSQL", "RESTful APIs"],
+  },
+  {
+    title: "Tools",
+    skills: ["Git", "GitHub", "Figma", "RSpec", "TDD", "Agile/Scrum"],
+  },
+  {
+    title: "AI Tools",
+    skills: ["Claude", "ChatGPT", "Cursor", "Gemini"],
+  },
+  {
+    title: "Soft Skills",
+    skills: [
+      "Communication",
+      "Teamwork",
+      "Technical Leadership",
+      "Mentoring",
+    ],
+  },
+];
 
 const MySkills = () => {
   const [addToRef] = useVisibilityObserver();
-    const calculateProgress = (
-    circularProgress,
-    progressValue,
-    progressEndValue,
-    speed
-  ) => {
-    let progressStartValue = 0;
-
-    const progress = setInterval(() => {
-      progressStartValue++;
-
-      progressValue.textContent = `${progressStartValue}%`;
-      circularProgress.style.background = `conic-gradient(#6AB187 ${progressStartValue}%, #374B3F 0%)`;
-
-      if (progressStartValue === progressEndValue) {
-        clearInterval(progress);
-      }
-    }, speed);
-  };
-
-  useEffect(() => {
-    const progressBars = [
-      {
-        progressClass: "circular-progress",
-        valueClass: "progress-value",
-        endValue: 99,
-      },
-      {
-        progressClass: "circular-progress-two",
-        valueClass: "progress-value-two",
-        endValue: 99,
-      },
-      {
-        progressClass: "circular-progress-three",
-        valueClass: "progress-value-three",
-        endValue: 99,
-      },
-      {
-        progressClass: "circular-progress-four",
-        valueClass: "progress-value-four",
-        endValue: 99,
-      },
-      {
-        progressClass: "circular-progress-five",
-        valueClass: "progress-value-five",
-        endValue: 99,
-      },
-      {
-        progressClass: "circular-progress-six",
-        valueClass: "progress-value-six",
-        endValue: 99,
-      },
-      {
-        progressClass: "circular-progress-seven",
-        valueClass: "progress-value-seven",
-        endValue: 99,
-      },
-      {
-        progressClass: "circular-progress-eight",
-        valueClass: "progress-value-eight",
-        endValue: 99,
-      },
-    ];
-
-    progressBars.forEach((bar) => {
-      const circularProgress = document.querySelector(`.${bar.progressClass}`);
-      const progressValue = document.querySelector(`.${bar.valueClass}`);
-      // calculateProgress(circularProgress, progressValue, bar.endValue, 100);
-      if (circularProgress && progressValue) {
-        calculateProgress(circularProgress, progressValue, bar.endValue, 100);
-      }
-    });
-  }, []);
 
   return (
     <section
@@ -90,76 +44,28 @@ const MySkills = () => {
         <h3 className="what-i-use mx-5 mt-0">What I Use</h3>
         <div
           ref={addToRef}
-          className="container flex flex-row flex-wrap justify-center items-center gap-6 lg:gap-24 xlg:gap-36 mt-8 text-center pb-10"
+          className="container flex flex-row flex-wrap justify-center items-stretch gap-6 mt-8 px-5 pb-10"
         >
-          <div>
-            <div className="circular-progress-common circular-progress">
-              <span className="progress-value-common progress-value">0%</span>
+          {skillGroups.map(({ title, skills }) => (
+            <div
+              key={title}
+              className="bg-custom-black border-radius p-6 w-full sd:w-80"
+            >
+              <h4 className="my-service-title text-custom-green mb-4">
+                {title}
+              </h4>
+              <ul className="flex flex-wrap gap-2">
+                {skills.map((skill) => (
+                  <li
+                    key={skill}
+                    className="skill-tag border-2 border-custom-green rounded-full px-3 py-1"
+                  >
+                    {skill}
+                  </li>
+                ))}
+              </ul>
             </div>
-            <p className="progress-text">JavaScript</p>
-          </div>
-          <div>
-            <div className="circular-progress-common circular-progress-two">
-              <span className="progress-value-common progress-value-two">
-                0%
-              </span>
-            </div>
-            <p className="progress-text">React</p>
-          </div>
-
-          <div>
-            <div className="circular-progress-common circular-progress-three">
-              <span className="progress-value-common progress-value-three">
-                0%
-              </span>
-            </div>
-            <p className="progress-text">Ruby</p>
-          </div>
-
-          <div>
-            <div className="circular-progress-common circular-progress-four">
-              <span className="progress-value-common progress-value-four">
-                0%
-              </span>
-            </div>
-            <p className="progress-text">PostgreSQL</p>
-          </div>
-
-          <div>
-            <div className="circular-progress-common circular-progress-five">
-              <span className="progress-value-common progress-value-five">
-                0%
-              </span>
-            </div>
-            <p className="progress-text">Creativity</p>
-          </div>
-
-          <div>
-            <div className="circular-progress-common circular-progress-six">
-              <span className="progress-value-common progress-value-six">
-                0%
-              </span>
-            </div>
-            <p className="progress-text">Teamwork</p>
-          </div>
-
-          <div>
-            <div className="circular-progress-common circular-progress-seven">
-              <span className="progress-value-common progress-value-seven">
-                0%
-              </span>
-            </div>
-            <p className="progress-text">Collaboration</p>
-          </div>
-
-          <div>
-            <div className="circular-progress-common circular-progress-eight">
-              <span className="progress-value-common progress-value-eight">
-                0%
-              </span>
-            </div>
-            <p className="progress-text">Communication</p>
-          </div>
+          ))}
         </div>
       </div>
     </section>

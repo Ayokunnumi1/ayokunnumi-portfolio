@@ -134,10 +134,9 @@ const Home = () => {
             </li>
             <li className="resume border-2 rounded px-1 w-20 border-custom-green">
               <a
-                href="/Ayo's Full-Stack Resume.pdf"
+                href="/Ayokunnumi%20Full%20Stack%20Resume%20(OpenRangeDevs).pdf"
                 target="_blank"
                 rel="noreferrer"
-                download="Ayo's Full-Stack Resume.pdf"
               >
                 Resume
               </a>

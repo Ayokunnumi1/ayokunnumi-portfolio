@@ -198,7 +198,7 @@ const Contact = () => {
         <div className="flex gap-8">
           <div className="w-16 h-16 rounded-full border-2 border-custom-green">
             <a
-              href="https://ayokunnumi-full-stack-resume.tiiny.site/"
+              href="/Ayokunnumi%20Full%20Stack%20Resume%20(OpenRangeDevs).pdf"
               target="_blank"
               rel="noreferrer"
             >
@@ -216,7 +216,7 @@ const Contact = () => {
           </div>
           <div className="w-16 h-16 rounded-full border-2 border-custom-green">
             <a
-              href="https://api.whatsapp.com/send?phone=08180752687"
+              href="https://wa.me/2349012800055"
               target="_blank"
               rel="noreferrer"
             >

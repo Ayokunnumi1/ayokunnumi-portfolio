@@ -131,35 +131,9 @@
   gap: 16px;
 }
 
-.circular-progress-common {
-  position: relative;
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background: conic-gradient(#6AB187 3.6deg, #374B3F 0deg);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.circular-progress-common::before {
-  content: "";
-  position: absolute;
-  height: 80px;
-  width: 80px;
-  border-radius: 50%;
-  background: #1F2122;
-}
-
-.progress-value-common {
-  position: relative;
+.skill-tag {
   font-family: "Roboto Condensed", sans-serif;
-  font-size: 20px;
-}
-
-.progress-text {
-  font-family: "Roboto Condensed", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 .custom-font-interesting-facts {
@@ -496,25 +470,6 @@
 }
 
 @media screen and (min-width: 720px) {
-  .circular-progress-common {
-    height: 150px;
-    width: 150px;
-  }
-
-  .circular-progress-common::before {
-    height: 120px;
-    width: 120px;
-  }
-
-  .progress-text {
-    font-family: "Roboto Mono", sans-serif;
-    font-size: 20px;
-  }
-
-  .progress-value-common {
-    font-size: 25px;
-  }
-
   .flex-pop {
     flex-direction: row;
   }
