@@ -5,18 +5,16 @@ const projectId = "id7zsgea";
 const dataset = "production";
 const apiVersion = "2022-02-01";
 const useCdn = true;
+// The dataset is public, so the token is optional. Anything prefixed with
+// REACT_APP_ is bundled into the client JS, so avoid setting it in production.
 const token = process.env.REACT_APP_SANITY_TOKEN;
-  
-if (!projectId || !token) {
-  throw new Error("Missing required environment variables");
-}
 
 export const client = createClient({
   projectId,
   dataset,
   apiVersion,
   useCdn,
-  token,
+  ...(token && { token }),
 });
 
 const builder = imageUrlBuilder(client);
