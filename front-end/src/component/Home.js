@@ -3,7 +3,6 @@ import { Link as ScrollLink } from "react-scroll";
 import Menu from "../assets/images/menu.png";
 import myPic from "../assets/images/myPic.png";
 import myPicWebP from "../assets/images/myPic.webp";
-import myPicAvif from "../assets/images/myPic.avif";
 import linkedIn from "../assets/images/linked_in_circled.png";
 import twitter from "../assets/images/twitter_circled.png";
 import medium from "../assets/images/medium.png";
@@ -158,10 +157,9 @@ const Home = () => {
         <div className="w-80 h-80 bg-[#374B3F] rounded-full flex flex-col items-center justify-center">
           <div className="w-64 h-64 rounded-full bg-custom-green flex flex-col items-center justify-center">
             <picture>
-              <source srcSet={myPicAvif} type="image/avif" />
               <source srcSet={myPicWebP} type="image/webp" />
               <img
-                className="rounded-full rotate-img"
+                className="w-64 h-64 rounded-full object-cover object-[50%_15%]"
                 src={myPic}
                 loading="eager"
                 alt="my face"
